@@ -1,0 +1,350 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  overflow-y: scroll;
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #444;
+  font-weight: 400;
+}
+
+.contents {
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
+  margin: -92px 0 -200px 0;
+  padding: 92px 0 300px 0;
+}
+
+.location-fixed {
+  padding-top: 30px;
+}
+
+.inner-wrap {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto;
+}
+.inner-wrap:after,
+.inner-wrap:before {
+  content: "";
+  display: table;
+}
+.inner-wrap:after {
+  clear: both;
+}
+h2.tit {
+  padding: 40px 0 0 0;
+  font-size: 1.8666em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #222;
+}
+
+ul.best-goods {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.best-goods li {
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  padding: 7px 15px;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-width: 1px;
+  border-bottom: 1px solid #503396;
+  margin-right: -4.6px;
+}
+ul.best-goods li.current {
+  color: #503396;
+  border: 1px solid #503396;
+  border-bottom: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.store_Tab {
+  width: 20%;
+}
+.pointmall {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  font-size: inherit;
+  padding-right: 38px;
+}
+
+.pointmall::after {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 38px;
+  height: 30px;
+  background: url(../img/new.gif) no-repeat;
+  background-size: 38px 30px;
+}
+
+/*새로운상품*/
+.store-main {
+  height: 254px;
+  margin-top: 12px;
+}
+.store-main:after {
+  clear: both;
+}
+.store-main:after,
+.store-main:before {
+  content: "";
+  display: table;
+}
+.store-main p {
+  margin: 0;
+  padding: 0;
+}
+.store-main .best-goods {
+  overflow: hidden;
+  float: left;
+  width: 550px;
+  height: 300px;
+}
+.store-main .best-goods a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 0 285px 0 0;
+  text-decoration: none;
+}
+.store-main .best-goods a .slogun {
+  padding-top: 36px;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.store-main .best-goods a .slogun .font-purple {
+  padding-top: 10px;
+}
+
+.store-main .best-goods a .img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  font-size: 0;
+  line-height: 0;
+}
+.store-main .best-goods a .img img {
+  width: 100%;
+  height: 100%;
+}
+.store-main .best-goods a .goods {
+  padding-top: 30px;
+}
+.store-main .best-goods a .goods .txt {
+  overflow: hidden;
+  height: 45px;
+}
+.store-main .best-goods a .goods .name {
+  font-size: 1.2em;
+  color: #222;
+}
+
+.font-gblue {
+  color: #01738b !important;
+}
+.store-main .best-goods a .slogun .font-purple {
+  padding-top: 10px;
+}
+.font-purple {
+  color: #503396 !important;
+}
+
+/*기프트카드*/
+h3.tit {
+  margin: 0;
+  padding: 0 0 16px 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #503396;
+  line-height: 1.1;
+  text-align: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mt70 {
+  margin-top: 70px !important;
+}
+.mb15 {
+  margin-bottom: 15px !important;
+}
+.ico-arr-right-gray {
+  overflow: hidden;
+  width: 7px;
+  height: 12px;
+  background-image: url(../img/ico-arr-right-gray.png);
+}
+.tit-util:after {
+  clear: both;
+}
+.tit-util:after,
+.tit-util:before {
+  content: "";
+  display: block;
+}
+.tit-util .tit {
+  float: left;
+  padding: 0 !important;
+  line-height: 1.1;
+}
+.tit-util .right {
+  float: right;
+}
+.tit-util .right a {
+  display: inline-block;
+}
+
+.store-list {
+  overflow: hidden;
+}
+.store-list p {
+  padding: 0;
+  margin: 0;
+}
+.store-list .list {
+  margin: 0 0 0 -40px;
+}
+.store-list .list li {
+  position: relative;
+  float: left;
+  width: 245px;
+  margin: 0 0 0 40px;
+  border-radius: 10px;
+}
+.store-list .list li:nth-child(4) ~ li {
+  margin-top: 40px;
+}
+
+.store-list .list li a {
+  position: relative;
+  display: block;
+  height: 435px;
+  text-decoration: none;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+}
+.store-list .list li a:focus,
+.store-list .list li a:hover {
+  border-color: #503396;
+}
+.store-list .list li .soldout {
+  display: none;
+}
+.store-list .list li .label {
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 24px;
+  padding: 0 10px;
+  line-height: 27px;
+  color: #fff;
+  font-size: 0.8667em;
+}
+.store-list .list li .label.push {
+  background-color: #237aca;
+}
+.store-list .list li .label.new {
+  background-color: #329eb1;
+}
+.store-list .list li .label.hot {
+  background-color: #000;
+}
+.store-list .list li .label.event {
+  background-color: #ed4c57;
+}
+.store-list .list li .label.best {
+  background-color: #503396;
+}
+.store-list .list li .info {
+  padding: 0 19px;
+  border-top: 1px solid #e4e4e4;
+  line-height: 1.3;
+}
+.store-list .list li .info .tit {
+  height: 105px;
+  padding-top: 20px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.store-list .list li .info .tit .name {
+  overflow: hidden;
+  height: 39px;
+  margin: 0 0 10px 0;
+  color: #222;
+  font-weight: 700;
+}
+.store-list .list li .info .tit .bundle {
+  font-size: 0.8667em;
+  color: #666;
+}
+.store-list .list li .info .price {
+  position: relative;
+  padding: 30px 0 0 0;
+  line-height: 1.1;
+}
+.store-list .list li .info .price .sale {
+  margin: 0;
+  color: #503396;
+}
+.store-list .list li .info .price .sale span {
+  font-size: 1.3333em;
+  vertical-align: middle;
+}
+.store-list .list li .info .price .sale em {
+  font-family: Roboto;
+  font-size: 1.6em;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.store-list .list li .info .price .original {
+  left: 0;
+  color: #666;
+  text-decoration: line-through;
+}
+.store-list .list li .info .price .ea {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  color: #666;
+}
+.store-list .list li .info .price .ea span {
+  color: #444;
+}
+.store-list .list li .img {
+  height: 243px;
+  font-size: 0;
+  line-height: 243px;
+  text-align: center;
+  background: #eee;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.store-list .list li .img img {
+  width: 100%;
+  vertical-align: middle;
+}
+.last {
+  margin-bottom: 100px;
+}

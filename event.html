@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sub_page_style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/event.css">
+    <!--js-->
+   
+    <script src="js/jquery.min_1.12.4.js"></script>
+    <script src="js/event_slider.js"></script>
+    <script src="js/event_more.js"></script>
+    <script src="js/more_movie_tab.js"></script>
+    <script src="js/tab2.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="index.html">
+                            <em><img src="img/logo.png" alt="MEGABOX"></em>
+                            <strong><img src="img/logo-sub.png" alt="LIFE THEATER"></strong>
+                        </a>    
+                    </h1>
+                    <nav id="mNav">
+                        <h2 class="ir_so">메가박스 전체메뉴</h2>
+                        <a href="#" class="ham"><span></span></a>
+                    </nav>
+                    <nav class="nav">
+                        <li class="main-menu">
+                            <a href="more_movie.html">영화</a>
+                            <ul class="sub-menu">
+                                <li><a href="more_movie.html">전체영화</a></li>
+                                <li><a href="#">큐레이션</a></li>
+                                <li><a href="#">무비포스트</a></li>
+                            </ul>
+                        </li>
+                        <!-- main-menu2 -->
+                        <li class="main-menu">
+                            <a href="#">예매</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">빠른예매</a></li>
+                                <li><a href="#">상영시간표</a></li>
+                                <li><a href="#">더 부티크 프라이빗 예매</a></li>
+                            </ul>
+                        </li>
+                        <!-- main-menu3 -->
+                        <li class="main-menu lmovie-menu">
+                            <a href="#">극장</a>
+                            <ul class="sub-menu ">
+                                <li><a href="#">전체극장</a></li>
+                                <li><a href="#">특별관</a></li>
+                            </ul>
+                        </li>
+                        <!-- main-menu4 -->
+                        <li class="main-menu rmovie-menu">
+                            <a href="event.html">이벤트</a>
+                            <ul class="sub-menu">
+                                <li><a href="event.html">진행중 이벤트</a></li>
+                                <li><a href="#">지난 이벤트</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                            </ul>
+                        </li>
+                        <!-- main-menu5 -->
+                        <li class="main-menu rmovie-menu" >
+                            <a href="#">스토어</a>
+                        </li>
+                        <!-- main-menu6 -->
+                        <li class="main-menu rmovie-menu ">
+                            <a href="#">혜택</a>
+                            <ul class="sub-menu ">
+                                <li><a href="#">메가박스 멤버십</a></li>
+                                <li><a href="#">제휴/할인</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu rmovie-menu ">
+                            <a class="login" href="#">로그인</a>
+                        </li>
+                    </nav>    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <!--more-movie-->
+    <div class="event_container">
+        <div class="event_contents location-fixed">
+            <div class="inner_wrap">
+                <h2 class="event_tit">전체이벤트</h2>
+                <div class="event_tab_list">
+                    <ul class="tabs">
+                        <li id="tab1" class="tab-link tab-current current" data-tab="tab-1"><a>전체</a></li>
+                        <li id="tab2" class="tab-link tab-current" data-tab="tab-2"><a>메가Pick</a></li>
+                        <li id="tab3" class="tab-link tab-current" data-tab="tab-3"><a>영화</a></li>
+                        <li id="tab4" class="tab-link tab-current" data-tab="tab-4"><a>극장</a></li>
+                        <li id="tab5" class="tab-link tab-current" data-tab="tab-5"><a>제휴/할인</a></li>
+                        <li id="tab6" class="tab-link tab-current" data-tab="tab-6"><a>시사회/무대인사</a></li>
+                    </ul>
+                    <!--tab1 시작-->
+                    <div id="tab-1" class="tab-content current">
+                        <div class="event_wrap">
+                        </div>
+                        <div class="event_slider">
+                            <p class="name">추천 이벤트</p>
+                            <!--전체 슬라이더 영역-->
+                            <div class="animation_canvas">
+                                <!--슬라이더 이미지 영역-->
+                                <div class="slider_panel">
+                                    <img class="slider_image" src="img/event_slider1.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider2.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider3.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider4.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider5.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider6.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider7.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider8.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider9.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider10.jpg" alt="">
+                                    <img class="slider_image" src="img/event_slider11.jpg" alt="">
+                                </div>
+                                <!--좌우 컨트롤 버튼 패널-->
+                                <div class="left_conrtrol_panel">
+                                    <img class="left_control" src="img/btn-event-prev-off.png" alt="">
+                                    <img class="left_control_on" src="img/btn-event-prev-on.png" alt="">
+                                </div>
+                                <div class="right_conrtrol_panel">
+                                    <img class="right_control" src="img/btn-event-next-off.png" alt="">
+                                    <img class="right_control_on" src="img/btn-event-next-on.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt70">
+                                    <h3 class="tit">메가Pick</h3>
+                                    <!--<div class="right more_movie_tab" class="tab-link" data-tab="tab-2">
+                                        <a href="#" title="더보기">더보기 <i class="iconset ico-arr-right-gray ml05"></i></a>
+                                    </div>
+                                    -->
+                                    <ul class="tabs tabcss tabs-1">
+                                        <li class="tab-link tabcss-link tab-link-1 " data-tab="tab-2"><a href="#">더보기<i class="iconset ico-arr-right-gray ml05"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="블랙 팬서: 와칸다 포에버> N차 관람 이벤트 상세보기">
+                                                <p class="img"> <img src="img/megaPick1.jpg" alt="블랙 팬서: 와칸다 포에버> N차 관람 이벤트" ></p>
+                                                <p class="tit">  &lt;블랙 팬서: 와칸다 포에버&gt; N차 관람 이벤트</p>
+                                                <p class="date">2022.11.04 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12106" data-netfunnel="N" class="eventBtn" title="DOLBY ATMOS 한국영화 스페셜 위크 상세보기">
+                                                <p class="img"> <img src="img/megaPick2.jpg" alt="DOLBY ATMOS 한국영화 스페셜 위크"></p>
+                                                <p class="tit">DOLBY ATMOS 한국영화 스페셜 위크</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.08</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12118" data-netfunnel="N" class="eventBtn" title="<블랙 팬서: 와칸다 포에버> 얼리버드 스페셜 예매 이벤트 상세보기">
+                                                <p class="img"> <img src="img/megaPick3.jpg" alt="<블랙 팬서: 와칸다 포에버> 얼리버드 스페셜 예매 이벤트" ></p>
+                                                <p class="tit">&lt;블랙 팬서: 와칸다 포에버&gt; 얼리버드 스페셜 예매 이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.08</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12115" data-netfunnel="N" class="eventBtn" title="메가박스 오리지널 티켓 Re.14 <브이 포 벤데타> 상세보기">
+                                                <p class="img"> <img src="img/megaPick4.jpg" alt="메가박스 오리지널 티켓 Re.14 <브이 포 벤데타>"></p>
+                                                <p class="tit">메가박스 오리지널 티켓 Re.14 &lt;브이 포 벤데타&gt;</p>
+                                                <p class="date">2022.10.31 ~ 2022.11.25</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt70">
+                                    <h3 class="tit">영화</h3>
+                                    <ul class="tabs tabcss tabs-2">
+                                        <li class="tab-link tabcss-link tab-link-2 " data-tab="tab-3"><a href="#">더보기<i class="iconset ico-arr-right-gray ml05"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[클소토크] 라 보엠">
+                                                <p class="img"> <img src="img/megaMovie1.jpg" alt="[클소토크] 라 보엠" ></p>
+                                                <p class="tit">[클소토크] 라 보엠</p>
+                                                <p class="date">2022.11.29 ~ 2022.12.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="프로메어">
+                                                <p class="img"> <img src="img/megaMovie.jpg" alt="프로메어" ></p>
+                                                <p class="tit">&lt;프로메어&gt; 4주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="알카라스의 여름">
+                                                <p class="img"> <img src="img/megaMovie3.jpg" alt="알카라스의 여름" ></p>
+                                                <p class="tit">&lt;알카라스의 여름&gt; 2주차 현장증정이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="같은 속옷을 입는 두 여자">
+                                                <p class="img"> <img src="img/megaMovie4.jpg" alt="같은 속옷을 입는 두 여자" ></p>
+                                                <p class="tit">&lt;같은 속옷을 입는 두 여자&gt; 개봉기념 현장증정이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt70">
+                                    <h3 class="tit">극장</h3>
+                                    <ul class="tabs tabcss tabs-3">
+                                        <li class="tab-link tabcss-link tab-link-3 " data-tab="tab-4"><a href="#">더보기<i class="iconset ico-arr-right-gray ml05"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="손흥민음료ORS 선착순 빵매 이벤트">
+                                                <p class="img"> <img src="img/megaTheater1.jpg" alt="손흥민음료ORS 선착순 빵매 이벤트" ></p>
+                                                <p class="tit">[고양스타필드, 상암월드컵경기장] 손흥민음료ORS 선착순 빵매 이벤트</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[대구이시아] 청소년 누구나 할인!">
+                                                <p class="img"> <img src="img/megaTheater2.jpg" alt="[대구이시아] 청소년 누구나 할인!" ></p>
+                                                <p class="tit">[대구이시아] 청소년 누구나 할인!</p>
+                                                <p class="date">2022.11.02 ~ 2022.12.11</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[덕천]  보고 또 보고">
+                                                <p class="img"> <img src="img/megaTheater3.jpg" alt="[덕천]  보고 또 보고" ></p>
+                                                <p class="tit">[덕천]  보고 또 보고~</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[송도] 한성자동차 인천송도전시장 제휴이벤트">
+                                                <p class="img"> <img src="img/megaTheater4.jpg" alt="[송도] 한성자동차 인천송도전시장 제휴이벤트" ></p>
+                                                <p class="tit">[송도] 한성자동차 인천송도전시장 제휴이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.12.25</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt70">
+                                    <h3 class="tit">제휴/할인</h3>
+                                    <ul class="tabs tabcss tabs-4">
+                                        <li class="tab-link tabcss-link tab-link-4 " data-tab="tab-5"><a href="#">더보기<i class="iconset ico-arr-right-gray ml05"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[카카오뱅크X메가박스] 메가박스와 26일저금">
+                                                <p class="img"> <img src="img/megaSale1.jpg" alt="[카카오뱅크X메가박스] 메가박스와 26일저금" ></p>
+                                                <p class="tit">[카카오뱅크X메가박스] 메가박스와 26일저금</p>
+                                                <p class="date">2022.11.07 ~ 2022.11.20</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요!">
+                                                <p class="img"> <img src="img/megaSale2.jpg" alt="[삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요!" ></p>
+                                                <p class="tit">[삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요!</p>
+                                                <p class="date">2022.10.17 ~ 2022.11.20</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="[광주은행X메가박스] 메가박스 카드 런칭기념 이벤트">
+                                                <p class="img"> <img src="img/megaSale3.jpg" alt="[광주은행X메가박스] 메가박스 카드 런칭기념 이벤트" ></p>
+                                                <p class="tit">[광주은행X메가박스] 메가박스 카드 런칭기념 이벤트</p>
+                                                <p class="date">2022.08.22 ~ 2023.02.28</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요!">
+                                                <p class="img"> <img src="img/megaSale4.jpg" alt="내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요!" ></p>
+                                                <p class="tit">내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요!</p>
+                                                <p class="date">2022.04.18 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt70">
+                                    <h3 class="tit">시사회/무대인사</h3>
+                                    <ul class="tabs tabcss tabs-5">
+                                        <li class="tab-link tabcss-link tab-link-5 " data-tab="tab-6"><a href="#">더보기<i class="iconset ico-arr-right-gray ml05"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="올빼미">
+                                                <p class="img"> <img src="img/megaStage1.jpg" alt="올빼미" ></p>
+                                                <p class="tit">&lt;올빼미&gt; 메가박스 회원 시사회</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="올데시벨빼미">
+                                                <p class="img"> <img src="img/megaStage2.jpg" alt="데시벨" ></p>
+                                                <p class="tit">&lt;데시벨&gt; 메가박스 회원 시사회</p>
+                                                <p class="date">2022.10.31 ~ 2022.11.08</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="동감">
+                                                <p class="img"> <img src="img/megaStage3.jpg" alt="동감" ></p>
+                                                <p class="tit">&lt;동감&gt; 메가박스 회원 시사회</p>
+                                                <p class="date">2022.10.24 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab1 종료-->
+                    <!--tab2 시작-->
+                    <div id="tab-2" class="tab-content" >
+                        <div class="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt40">
+                                    <p class="result-count"><strong>전체 <b>17</b>건</strong></p>
+                                </div>
+                                <div class="event-list mt15">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12135" data-netfunnel="N" class="eventBtn" title="<블랙 팬서: 와칸다 포에버> N차 관람 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/PU9eP42BNl0BB0B7i79dcAE9hJoLrL82.jpg" alt="<블랙 팬서: 와칸다 포에버> N차 관람 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit"> &lt;블랙 팬서: 와칸다 포에버&gt; N차 관람 이벤트</p>
+                                                <p class="date">2022.11.04 ~ 2022.11.30</p>
+                                            </a>                                   
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12106" data-netfunnel="N" class="eventBtn" title="DOLBY ATMOS 한국영화 스페셜 위크 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/28/XRjBKcWgFNny4fZJpXvGaxvwQ9J4KMlR.jpg" alt="DOLBY ATMOS 한국영화 스페셜 위크" onerror="noImg(this);"></p>
+                                                <p class="tit">DOLBY ATMOS 한국영화 스페셜 위크</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.08</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12118" data-netfunnel="N" class="eventBtn" title="<블랙 팬서: 와칸다 포에버> 얼리버드 스페셜 예매 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/01/PIun9G7zUOVB1bQtmj0GYvtgE99o8hCJ.jpg" alt="<블랙 팬서: 와칸다 포에버> 얼리버드 스페셜 예매 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;블랙 팬서: 와칸다 포에버&gt; 얼리버드 스페셜 예매 이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.08</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12115" data-netfunnel="N" class="eventBtn" title="메가박스 오리지널 티켓 Re.14 <브이 포 벤데타> 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/31/vLU8ezppmJ8X6F23pobMXYsRYjHxsydp.jpg" alt="메가박스 오리지널 티켓 Re.14 <브이 포 벤데타>" onerror="noImg(this);"></p>
+                                                <p class="tit">메가박스 오리지널 티켓 Re.14 &lt;브이 포 벤데타&gt;</p>
+                                                <p class="date">2022.10.31 ~ 2022.11.25</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12111" data-netfunnel="N" class="eventBtn" title="유자티와 함께 타르트 한조각! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/28/9mOIrHUmlUjf2VzfFAYPzDF0rLNpIiS1.jpg" alt="유자티와 함께 타르트 한조각!" onerror="noImg(this);"></p>
+                                                <p class="tit">유자티와 함께 타르트 한조각!</p>
+                                                <p class="date">2022.10.28 ~ 2023.01.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12073" data-netfunnel="N" class="eventBtn" title="BlackBlue in your area! 블랙&amp;블루 스탬프 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/21/Ihbx0DDbHHgVZWweWxTHyfBNdqxwELsV.jpg" alt="BlackBlue in your area! 블랙&amp;블루 스탬프 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">BlackBlue in your area! 블랙&amp;블루 스탬프 이벤트</p>
+                                                <p class="date">2022.10.21 ~ 2022.12.20</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12069" data-netfunnel="N" class="eventBtn" title="찾았다! 우리동네 메가박스!! 카카오친구하고 할인쿠폰 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/21/6a0ezdXpi7c2rbaMS3Bv7dX6n9guxpjm.jpg" alt="찾았다! 우리동네 메가박스!! 카카오친구하고 할인쿠폰 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">찾았다! 우리동네 메가박스!! 카카오친구하고 할인쿠폰 받자!</p>
+                                                <p class="date">2022.10.21 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12033" data-netfunnel="N" class="eventBtn" title="메가박스 오리지널 티켓 No.63 <블랙 아담> 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/17/PKWvY757E0Skl21KuVE78UkbbiDWVqcb.jpg" alt="메가박스 오리지널 티켓 No.63 <블랙 아담>" onerror="noImg(this);"></p>
+                                                <p class="tit">메가박스 오리지널 티켓 No.63 &lt;블랙 아담&gt;</p>
+                                                <p class="date">2022.10.17 ~ 2022.11.18</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12029" data-netfunnel="N" class="eventBtn" title="[신규가입 이벤트] WELCOME TO MGBX ߎ頬ぬ丫㴪谢">
+                                                <p class="img"><img src="https://img.megabox.co.kr/SharedImg/event/2022/10/17/7NKC5Fxmi81LiIy0hOqdUMLdYstJCq5Y.jpg" alt="[신규가입 이벤트] WELCOME TO MGBX ߎ颠" onerror="noImg(this);"></p>
+                                                <p class="tit">[신규가입 이벤트] WELCOME TO MGBX ߎ鼯p>
+                                                <p class="date">2022.10.17 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li> 
+                                            <a href="#" data-no="12011" data-netfunnel="N" class="eventBtn" title="[메가박스X교촌] 블랙시크릿팝콘 론칭 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/13/8sZE9oqzlnanxtQqfVa4MAqaIafqoCj2.jpg" alt="[메가박스X교촌] 블랙시크릿팝콘 론칭" onerror="noImg(this);"></p>
+                                                <p class="tit">[메가박스X교촌] 블랙시크릿팝콘 론칭</p>
+                                                <p class="date">2022.10.13 ~ 2022.11.12</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11991" data-netfunnel="N" class="eventBtn" title="메가박스 오리지널 티켓 No.61 <오펀: 천사의 탄생> 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/11/ZpUHSYTQV7vtddqEcGNodRrcKKerk5mk.jpg" alt="메가박스 오리지널 티켓 No.61 <오펀: 천사의 탄생>" onerror="noImg(this);"></p>
+                                                <p class="tit">메가박스 오리지널 티켓 No.61 &lt;오펀: 천사의 탄생&gt;</p>
+                                                <p class="date">2022.10.11 ~ 2022.11.20</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11983" data-netfunnel="N" class="eventBtn" title="[예지미인X메가박스] 그날에 당황하지 말고 PINK BOX 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/07/aVPaBWnnV3du3eA0WwccH3xMWqCszU8k.jpg" alt="[예지미인X메가박스] 그날에 당황하지 말고 PINK BOX" onerror="noImg(this);"></p>
+                                                <p class="tit">[예지미인X메가박스] 그날에 당황하지 말고 PINK BOX</p>
+                                                <p class="date">2022.10.07 ~ 2023.09.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11572" data-netfunnel="N" class="eventBtn" title="나도 영화 평론가! 관람평 쓰고 포인트 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/12/TtrOuwC2fcCU0gOxIcP6Zg0cn31pYmNG.jpg" alt="나도 영화 평론가! 관람평 쓰고 포인트 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">나도 영화 평론가! 관람평 쓰고 포인트 받자!</p>
+                                                <p class="date">2022.07.01 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11303" data-netfunnel="N" class="eventBtn" title="메가박스 오리지널 티켓북 시즌2 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/04/25/GwvH6olIa1O7OBMu6yhvDrSwLwGNJtyT.jpg" alt="메가박스 오리지널 티켓북 시즌2" onerror="noImg(this);"></p>
+                                                <p class="tit">메가박스 오리지널 티켓북 시즌2</p>
+                                                <p class="date">2022.04.25 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11030" data-netfunnel="N" class="eventBtn" title="✌ 2022년 VIP 회원 혜택 안내 ✌ 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/23/QWWvsW0WkOVVckXmtBR45QbkfvmUtBkJ.jpg" alt="✌ 2022년 VIP 회원 혜택 안내 ✌" onerror="noImg(this);"></p>
+                                                <p class="tit">✌ 2022년 VIP 회원 혜택 안내 ✌</p>
+                                                <p class="date">2022.03.02 ~ 2023.02.28</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11082" data-netfunnel="N" class="eventBtn" title="[VIP제휴혜택] 2022 교보문고 &amp; 핫트랙스 특별 제휴 안내 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/03/08/6H8FMDOaAsy1LX4uA9TJlso9nOMWH3z5.jpg" alt="[VIP제휴혜택] 2022 교보문고 &amp; 핫트랙스 특별 제휴 안내" onerror="noImg(this);"></p>
+                                                <p class="tit">[VIP제휴혜택] 2022 교보문고 &amp; 핫트랙스 특별 제휴 안내</p>
+                                                <p class="date">2022.03.01 ~ 2023.02.28</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10868" data-netfunnel="N" class="eventBtn" title="신규 &amp; 휴면회원 만반잘부! 모두 혜택 받아가세요  상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/14/ACdDJx36kS3ytWbf8JuflttgFwbvJ0Mt.jpg" alt="신규 &amp; 휴면회원 만반잘부! 모두 혜택 받아가세요 " onerror="noImg(this);"></p>
+                                                <p class="tit">신규 &amp; 휴면회원 만반잘부! 모두 혜택 받아가세요 </p>
+                                                <p class="date">2022.01.01 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab2 종료-->
+                    <!--tab3 시작-->
+                    <div id="tab-3" class="tab-content">
+                        <div id="event_list_wrap">
+                            <div class="inner_wrap">
+                                <div class="tit-util mt40">
+                                    <p class="result-count"><strong>전체 <b>36</b>건</strong></p>
+                                </div>
+                                <div class="event-list ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12141" data-netfunnel="N" class="eventBtn" title="[클소토크] 라 보엠 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/07/Ig4RAOpSDRvcKiFEujc83udxcxOgrlT2.jpg" alt="[클소토크] 라 보엠" onerror="noImg(this);"></p>
+                                                <p class="tit">[클소토크] 라 보엠</p>
+                                                <p class="date">2022.11.29 ~ 2022.12.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12147" data-netfunnel="N" class="eventBtn" title="<에브리씽 에브리웨어 올 앳 원스> 멀티포스터 증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/08/45n9yP1nRYMRFbbbuhtYMGDyDg9UBuXp.jpg" alt="<에브리씽 에브리웨어 올 앳 원스> 멀티포스터 증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;에브리씽 에브리웨어 올 앳 원스&gt; 멀티포스터 증정 이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12144" data-netfunnel="N" class="eventBtn" title="<프로메어> 4주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/07/IPeqDhnpOwuuCIZQn9YL0iz95Q64mAZm.jpg" alt="<프로메어> 4주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;프로메어&gt; 4주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12143" data-netfunnel="N" class="eventBtn" title="<알카라스의 여름> 2주차 현장증정이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/07/VfDN3FpJrevhYfP8DLqUOHXSjXjXzHzN.jpg" alt="<알카라스의 여름> 2주차 현장증정이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;알카라스의 여름&gt; 2주차 현장증정이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12142" data-netfunnel="N" class="eventBtn" title="<같은 속옷을 입는 두 여자> 개봉기념 현장증정이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/07/hpRkEGTQxT3tJ2nsfIXy9s6wwSHwUfVg.jpg" alt="<같은 속옷을 입는 두 여자> 개봉기념 현장증정이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;같은 속옷을 입는 두 여자&gt; 개봉기념 현장증정이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.24</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12146" data-netfunnel="N" class="eventBtn" title="<극장판 유루캠△> 3주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/08/PVk0rh1hjBQTMys7gqzBOt2wCzKe4FWc.jpg" alt="<극장판 유루캠△> 3주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;극장판 유루캠△&gt; 3주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.16</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12131" data-netfunnel="N" class="eventBtn" title="<같은 속옷을 입는 두 여자> 스페셜 GV 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/qfMvpVAJfmfSPHCFQP6wmJoMaWfnJbGS.jpg" alt="<같은 속옷을 입는 두 여자> 스페셜 GV" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;같은 속옷을 입는 두 여자&gt; 스페셜 GV</p>
+                                                <p class="date">2022.11.10 ~ 2022.11.10</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12108" data-netfunnel="N" class="eventBtn" title="<블랙 팬서: 와칸다 포에버> 오리지널 굿즈 증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/28/P7685tEXtIbrTgiC3cbqiWFg7ntSYFVq.jpg" alt="<블랙 팬서: 와칸다 포에버> 오리지널 굿즈 증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;블랙 팬서: 와칸다 포에버&gt; 오리지널 굿즈 증정 이벤트</p>
+                                                <p class="date">2022.11.09 ~ 2022.11.23</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12137" data-netfunnel="N" class="eventBtn" title="[동감] 선착순 빵원티켓 ➕ 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/04/MogSeHmFZNyTujGh3Uzn9cZaX4sMGXCN.jpg" alt="[동감] 선착순 빵원티켓 ➕" onerror="noImg(this);"></p>
+                                                <p class="tit">[동감] 선착순 빵원티켓 ➕</p>
+                                                <p class="date">2022.11.08 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12138" data-netfunnel="N" class="eventBtn" title="<극장판 유루캠△> 2주차 주말 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/04/IouYjSgQpRBSobMPlbndBWqYissot76J.jpg" alt="<극장판 유루캠△> 2주차 주말 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;극장판 유루캠△&gt; 2주차 주말 현장증정 이벤트</p>
+                                                <p class="date">2022.11.05 ~ 2022.11.19</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12133" data-netfunnel="N" class="eventBtn" title="<자백> 만원의 행복 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/SjtHkb6wSleVvjCtNljBCnztfEsOMq3e.jpg" alt="<자백> 만원의 행복" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;자백&gt; 만원의 행복</p>
+                                                <p class="date">2022.11.04 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12132" data-netfunnel="N" class="eventBtn" title="<리멤버> 만원의 행복 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/7GPQBWQuUA3VFCXA215Uvxwae4442gMt.jpg" alt="<리멤버> 만원의 행복" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;리멤버&gt; 만원의 행복</p>
+                                                <p class="date">2022.11.04 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12128" data-netfunnel="N" class="eventBtn" title="<알카라스의 여름> 개봉기념 현장증정이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/0N0QP0lrkPZ9sJayHbkavhcWQyhEHk6Y.jpg" alt="<알카라스의 여름> 개봉기념 현장증정이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;알카라스의 여름&gt; 개봉기념 현장증정이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.17</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12127" data-netfunnel="N" class="eventBtn" title="<프로메어> 3주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/uaria63zsRglAyDKgCJFw1z603QhR8q0.jpg" alt="<프로메어> 3주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;프로메어&gt; 3주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.17</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12126" data-netfunnel="N" class="eventBtn" title="<수프와 이데올로기> 3주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/dmUJj0i4qpo1kKJAgxjmusagf409CSRH.jpg" alt="<수프와 이데올로기> 3주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;수프와 이데올로기&gt; 3주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.17</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12110" data-netfunnel="N" class="eventBtn" title="<탑> 개봉기념 현장증정이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/28/Vgrckkv6HxjkmIrQiFntwq9Qdmi7U4nc.jpg" alt="<탑> 개봉기념 현장증정이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;탑&gt; 개봉기념 현장증정이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.17</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12063" data-netfunnel="N" class="eventBtn" title="<걸리버 리턴즈> 메가박스 관람인증 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/19/pdL9S32FWI7SyGColcrTTQrtkvKl0Yxi.jpg" alt="<걸리버 리턴즈> 메가박스 관람인증 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;걸리버 리턴즈&gt; 메가박스 관람인증 이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12129" data-netfunnel="N" class="eventBtn" title="<극장판 유루캠△> 2주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/q22tLM0AnXR7CIJJFjaGIkTS7lYt95L5.jpg" alt="<극장판 유루캠△> 2주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;극장판 유루캠△&gt; 2주차 현장증정 이벤트</p>
+                                                <p class="date">2022.11.03 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11858" data-netfunnel="N" class="eventBtn" title="<브이 포 벤데타> 개봉기념 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/14/YCJl1Qdef5cGkPMAfpM6WdDKuYdM6Ugl.jpg" alt="<브이 포 벤데타> 개봉기념 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;브이 포 벤데타&gt; 개봉기념 현장증정 이벤트</p>
+                                                <p class="date">2022.11.02 ~ 2022.12.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12076" data-netfunnel="N" class="eventBtn" title="아트나인과 함께 하는 <가재가 노래하는 곳> 예매 경품 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/21/IwCMhe9fx1nWlF8Vkpgz8wmXWtn0zMZx.jpg" alt="아트나인과 함께 하는 <가재가 노래하는 곳> 예매 경품 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">아트나인과 함께 하는 &lt;가재가 노래하는 곳&gt; 예매 경품 이벤트</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12130" data-netfunnel="N" class="eventBtn" title="[메가박스X시네마캐슬] 시네마캐슬 11월 상영작 안내 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/R9LQmC3scvhVzjMBjVGICJTTw9LwGnhB.jpg" alt="[메가박스X시네마캐슬] 시네마캐슬 11월 상영작 안내" onerror="noImg(this);"></p>
+                                                <p class="tit">[메가박스X시네마캐슬] 시네마캐슬 11월 상영작 안내</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12107" data-netfunnel="N" class="eventBtn" title="<극장판 유루캠△> 개봉주말 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/q22tLM0AnXR7CIJJFjaGIkTS7lYt95L5.jpg" alt="<극장판 유루캠△> 개봉주말 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;극장판 유루캠△&gt; 개봉주말 현장증정 이벤트</p>
+                                                <p class="date">2022.10.29 ~ 2022.11.12</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12091" data-netfunnel="N" class="eventBtn" title="<극장판 짱구는 못말려: 수수께끼! 꽃피는 천하떡잎학교> 흥행 기념 현장 증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/alEJNTi2RXgQsrjMPWxvt1Qdz0dzy8FI.jpg" alt="<극장판 짱구는 못말려: 수수께끼! 꽃피는 천하떡잎학교> 흥행 기념 현장 증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;극장판 짱구는 못말려: 수수께끼! 꽃피는 천하떡잎학교&gt; 흥행 기념 현장 증정 이벤트</p>
+                                                <p class="date">2022.10.29 ~ 2022.11.12</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12088" data-netfunnel="N" class="eventBtn" title="<에브리씽 에브리웨어 올 앳 원스> 눈알 스티커팩 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/lgqoK7S71TYom7lCWr2zeWeSViUyOvVh.jpg" alt="<에브리씽 에브리웨어 올 앳 원스> 눈알 스티커팩 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;에브리씽 에브리웨어 올 앳 원스&gt; 눈알 스티커팩 현장증정 이벤트</p>
+                                                <p class="date">2022.10.29 ~ 2022.11.12</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11992" data-netfunnel="N" class="eventBtn" title="<공조2 : 인터내셔날> 스페셜 특가 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/11/2UJFUbBDsFU0KjQJuvYLeMwD4U7deMI0.png" alt="<공조2 : 인터내셔날> 스페셜 특가 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;공조2 : 인터내셔날&gt; 스페셜 특가 이벤트</p>
+                                                <p class="date">2022.10.28 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12113" data-netfunnel="N" class="eventBtn" title="아트나인과 함께 하는 <수프와 이데올로기> 굿즈패키지 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/28/qI1xCMOBot7YVpOCsL7NYz716bDqK3SV.jpg" alt="아트나인과 함께 하는 <수프와 이데올로기> 굿즈패키지" onerror="noImg(this);"></p>
+                                                <p class="tit">아트나인과 함께 하는 &lt;수프와 이데올로기&gt; 굿즈패키지</p>
+                                                <p class="date">2022.10.28 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12092" data-netfunnel="N" class="eventBtn" title="<수프와 이데올로기> 2주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/16l5g2PqOKYLivMQoe8MdlqD4ciGujjI.jpg" alt="<수프와 이데올로기> 2주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;수프와 이데올로기&gt; 2주차 현장증정 이벤트</p>
+                                                <p class="date">2022.10.27 ~ 2022.11.10</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12089" data-netfunnel="N" class="eventBtn" title="<죽어도 자이언츠> 개봉기념 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/JfjiRYYtZbMB1rWkCgVMd4626RzQ8C9o.jpg" alt="<죽어도 자이언츠> 개봉기념 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;죽어도 자이언츠&gt; 개봉기념 현장증정 이벤트</p>
+                                                <p class="date">2022.10.27 ~ 2022.11.10</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12087" data-netfunnel="N" class="eventBtn" title="<낮과 달> 2주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/MWLLZE9W4so1QSsRf67hjaqNsklhxsug.jpg" alt="<낮과 달> 2주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;낮과 달&gt; 2주차 현장증정 이벤트</p>
+                                                <p class="date">2022.10.27 ~ 2022.11.10</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12086" data-netfunnel="N" class="eventBtn" title="<프로메어> 2주차 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/25/d0SwVFxPQGnl3hLXkty9aQ2dInGTW3Wf.jpg" alt="<프로메어> 2주차 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;프로메어&gt; 2주차 현장증정 이벤트</p>
+                                                <p class="date">2022.10.27 ~ 2022.11.10</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12067" data-netfunnel="N" class="eventBtn" title="<바커스: 고양이를 조심해!> 메가박스 관람인증 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/20/bg8wEEQL25kJTCDqiXtgm56TVSlOiL53.jpg" alt="<바커스: 고양이를 조심해!> 메가박스 관람인증 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;바커스: 고양이를 조심해!&gt; 메가박스 관람인증 이벤트</p>
+                                                <p class="date">2022.10.27 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12081" data-netfunnel="N" class="eventBtn" title="<아인보 : 아마존의 전설> 개봉기념 현장증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/24/vrZKxPmAz9y2hTdnm4b6qgQOolbS2eTh.jpg" alt="<아인보 : 아마존의 전설> 개봉기념 현장증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;아인보 : 아마존의 전설&gt; 개봉기념 현장증정 이벤트</p>
+                                                <p class="date">2022.10.26 ~ 2022.11.09</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12044" data-netfunnel="N" class="eventBtn" title="[Encore!!] 2022 시네 도슨트 앙코르 강연 안내 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/04/h2elLXlEik4fFDMrQPkLDiWU2FI4GY4x.jpg" alt="[Encore!!] 2022 시네 도슨트 앙코르 강연 안내" onerror="noImg(this);"></p>
+                                                <p class="tit">[Encore!!] 2022 시네 도슨트 앙코르 강연 안내</p>
+                                                <p class="date">2022.10.24 ~ 2022.12.06</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12019" data-netfunnel="N" class="eventBtn" title="[시즌 안내] 2022/23 로열 오페라 하우스 라이브 시네마 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/14/WmofGtKpSqCeBuwwG1CYCDV2RMmkIL3H.jpg" alt="[시즌 안내] 2022/23 로열 오페라 하우스 라이브 시네마" onerror="noImg(this);"></p>
+                                                <p class="tit">[시즌 안내] 2022/23 로열 오페라 하우스 라이브 시네마</p>
+                                                <p class="date">2022.10.14 ~ 2023.08.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11771" data-netfunnel="N" class="eventBtn" title="<워너 필름 소사이어티> 기획 상영전 스탬프 이벤트  상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/07/kHD7UJluHHW9xdxqO5GojJkqKjYsYj7a.png" alt="<워너 필름 소사이어티> 기획 상영전 스탬프 이벤트 " onerror="noImg(this);"></p>
+                                                <p class="tit">&lt;워너 필름 소사이어티&gt; 기획 상영전 스탬프 이벤트 </p>
+                                                <p class="date">2022.09.21 ~ 2022.12.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11783" data-netfunnel="N" class="eventBtn" title="워너 필름 소사이어티 기획 상영전 &amp; 스페셜 패키지 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/31/WuuAhgoqmuU6hX6fWXJDXNuETcPfm0mN.png" alt="워너 필름 소사이어티 기획 상영전 &amp; 스페셜 패키지" onerror="noImg(this);"></p>
+                                                <p class="tit">워너 필름 소사이어티 기획 상영전 &amp; 스페셜 패키지</p>
+                                                <p class="date">2022.09.06 ~ 2022.12.13</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11698" data-netfunnel="N" class="eventBtn" title="2022 심리학 읽는 영화관 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/12/9frWCzCLsW2JciNsQ9hmjkeVqIGxjZ71.jpg" alt="2022 심리학 읽는 영화관" onerror="noImg(this);"></p>
+                                                <p class="tit">2022 심리학 읽는 영화관</p>
+                                                <p class="date">2022.08.12 ~ 2022.11.28</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11469" data-netfunnel="N" class="eventBtn" title="[2022 시네 도슨트] 강연 안내 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/06/13/3w6ABBRMHicw97H14io99blRvZF6jV9Q.jpg" alt="[2022 시네 도슨트] 강연 안내" onerror="noImg(this);"></p>
+                                                <p class="tit">[2022 시네 도슨트] 강연 안내</p>
+                                                <p class="date">2022.06.13 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab3 종료-->
+                    <!--tab4 시작-->
+                    <div id="tab-4" class="tab-content">
+                        <div id="event-list-wrap">
+                            <div class="inner-wrap">
+                                <div class="tit-util mt40">
+                                    <p class="result-count"><strong>전체 <b>76</b>건</strong></p>
+                                </div>
+                                <div class="event-list ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12119" data-netfunnel="N" class="eventBtn" title="[고양스타필드, 상암월드컵경기장] 손흥민음료ORS 선착순 빵매 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/xlOD82htVkdPzlOluJiyIGi3pcB9jlRE.jpg" alt="[고양스타필드, 상암월드컵경기장] 손흥민음료ORS 선착순 빵매 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[고양스타필드, 상암월드컵경기장] 손흥민음료ORS 선착순 빵매 이벤트</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12148" data-netfunnel="N" class="eventBtn" title="[코엑스] 이비스 스타일 강남점과 1+1 둘이서 패키지  상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/08/srT8U2FYs04BAtYa6rABml7RP4Eg9rdv.jpg" alt="[코엑스] 이비스 스타일 강남점과 1+1 둘이서 패키지 " onerror="noImg(this);"></p>
+                                                <p class="tit">[코엑스] 이비스 스타일 강남점과 1+1 둘이서 패키지 </p>
+                                                <p class="date">2022.11.08 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12122" data-netfunnel="N" class="eventBtn" title="[대구이시아] 청소년 누구나 할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/bmTK6b71boXGsZ763450GZtRmU7DB3Xo.jpg" alt="[대구이시아] 청소년 누구나 할인!" onerror="noImg(this);"></p>
+                                                <p class="tit">[대구이시아] 청소년 누구나 할인!</p>
+                                                <p class="date">2022.11.02 ~ 2022.12.11</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11972" data-netfunnel="N" class="eventBtn" title="[덕천]  보고 또 보고~ 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/06/rmxHDcAYmlLLp5TEHmeMg41GPZ1WXj20.jpg" alt="[덕천]  보고 또 보고~" onerror="noImg(this);"></p>
+                                                <p class="tit">[덕천]  보고 또 보고~</p>
+                                                <p class="date">2022.11.02 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12099" data-netfunnel="N" class="eventBtn" title="[송도] 한성자동차 인천송도전시장 제휴이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/26/8t6dH13C87sgkccvM5PBEnHQNAaobEIi.jpg" alt="[송도] 한성자동차 인천송도전시장 제휴이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[송도] 한성자동차 인천송도전시장 제휴이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.12.25</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12124" data-netfunnel="N" class="eventBtn" title="[안산중앙] 콤보 2,000원 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/ODp0qf1KeT6TnC9z6in4v4fs4cK43pkc.jpg" alt="[안산중앙] 콤보 2,000원 할인 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[안산중앙] 콤보 2,000원 할인 이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12095" data-netfunnel="N" class="eventBtn" title="[전주혁신] 오픈 2주년 기념 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/26/syowzsPi0Qbk3gRTQlftxtU7zTRWi2iR.jpg" alt="[전주혁신] 오픈 2주년 기념 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[전주혁신] 오픈 2주년 기념 이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12055" data-netfunnel="N" class="eventBtn" title="[일산] 재방문 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/20/i8KVPFsYLQOfU5VntZ1zkDeUGjxxQ5yB.jpg" alt="[일산] 재방문 할인 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[일산] 재방문 할인 이벤트</p>
+                                                <p class="date">2022.11.01 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12098" data-netfunnel="N" class="eventBtn" title="[강동] 영화 관람 후 팝콘 리필받자 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/26/H30K2DkwqNQzAlGqaJnWIQLNlj5kDhPK.jpg" alt="[강동] 영화 관람 후 팝콘 리필받자" onerror="noImg(this);"></p>
+                                                <p class="tit">[강동] 영화 관람 후 팝콘 리필받자</p>
+                                                <p class="date">2022.10.26 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12054" data-netfunnel="N" class="eventBtn" title="[분당] 일룸 프리미엄샵 분당서현 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/19/f5ByKSUtMcz7cHaT15C4zOubGZHhyowo.jpg" alt="[분당] 일룸 프리미엄샵 분당서현 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[분당] 일룸 프리미엄샵 분당서현 이벤트</p>
+                                                <p class="date">2022.10.24 ~ 2022.12.31</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12094" data-netfunnel="N" class="eventBtn" title="[파주운정] 재방문 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/26/BJP4teDSv12BvIioKMqt1R0a8tKilvrg.jpg" alt="[파주운정] 재방문 할인 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">[파주운정] 재방문 할인 이벤트</p>
+                                                <p class="date">2022.10.24 ~ 2022.11.30</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12053" data-netfunnel="N" class="eventBtn" title="[목동] 또와! 페스티벌 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/19/liQpHBIrgue7554RHAqfqXd30gRXkqrC.jpg" alt="[목동] 또와! 페스티벌" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [목동] 또와! 페스티벌
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.20 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12123" data-netfunnel="N" class="eventBtn" title="[부천스타필드시티] 더블카라멜팝콘 런칭  상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/BNiZcWN9PWdbjyBnVpHHnIyO1M5ZFfaf.jpg" alt="[부천스타필드시티] 더블카라멜팝콘 런칭 " onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부천스타필드시티] 더블카라멜팝콘 런칭 
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.19 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12121" data-netfunnel="N" class="eventBtn" title="[구미강동] 영화보면 팝콘 무료 증정 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/2Xm0jjLaMB6jWzwvafJ8tUXCr2qQ1IM9.jpg" alt="[구미강동] 영화보면 팝콘 무료 증정" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [구미강동] 영화보면 팝콘 무료 증정
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.19 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12049" data-netfunnel="N" class="eventBtn" title="[광명AK플라자, 광명소하] 오직 광명에서만 즐기는 브런치 세트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/19/853sC4wF5Cc61H7VoQzibLNbVVdy1cjm.jpg" alt="[광명AK플라자, 광명소하] 오직 광명에서만 즐기는 브런치 세트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광명AK플라자, 광명소하] 오직 광명에서만 즐기는 브런치 세트
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.19 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12050" data-netfunnel="N" class="eventBtn" title="[세종나성] 모바일오더 스낵싱글콤보 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/19/I3CCm58BwmiJANnJEeaJPYGxPSGYnCAR.jpg" alt="[세종나성] 모바일오더 스낵싱글콤보" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [세종나성] 모바일오더 스낵싱글콤보
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.17 ~ 2022.11.29
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12003" data-netfunnel="N" class="eventBtn" title="[별내] SNS에 방문인증만 하면 할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/12/Kd2s6vrqsWXHb20E0FKPDXzMp4J6XKHf.jpg" alt="[별내] SNS에 방문인증만 하면 할인!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [별내] SNS에 방문인증만 하면 할인!
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.12 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11973" data-netfunnel="N" class="eventBtn" title="[대구이시아] 발코니 무비패스 5회권 런칭 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/06/F7XrmZXfmCj0BT7YaKmGkMInMzKC1ZKO.jpg" alt="[대구이시아] 발코니 무비패스 5회권 런칭" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대구이시아] 발코니 무비패스 5회권 런칭
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11971" data-netfunnel="N" class="eventBtn" title="[청라지젤] 카카오 플러스 친구 추가 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/06/nBuAIlIGWgiJvzWWCYrbKZ8yHx3X6gBI.jpg" alt="[청라지젤] 카카오 플러스 친구 추가 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [청라지젤] 카카오 플러스 친구 추가 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11970" data-netfunnel="N" class="eventBtn" title="[부산경남지역] 나를 이겨라! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/06/GL48dnZOvkQ7vOEvlyRo4KKSkqA6LhTf.jpg" alt="[부산경남지역] 나를 이겨라!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산경남지역] 나를 이겨라!
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11999" data-netfunnel="N" class="eventBtn" title="[동대문,상봉] 팝콘 무료 증정 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/12/gAM3zCTGJqxwZpFTezRtd0ZmBLNvYJmm.jpg" alt="[동대문,상봉] 팝콘 무료 증정 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [동대문,상봉] 팝콘 무료 증정 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.04 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12005" data-netfunnel="N" class="eventBtn" title="[춘천석사] 춘천석사점 관람권 할인 패키지 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/12/D4qxdzxvf2BK0dlHQH75Wo8tIwqzAfcb.jpg" alt="[춘천석사] 춘천석사점 관람권 할인 패키지" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [춘천석사] 춘천석사점 관람권 할인 패키지
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.02 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12000" data-netfunnel="N" class="eventBtn" title="[천안] 천안 대학생들에게만 드리는 특급할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/12/3XspiMgpixzPxRdwG2xVc5m34iAkBsOo.jpg" alt="[천안] 천안 대학생들에게만 드리는 특급할인!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [천안] 천안 대학생들에게만 드리는 특급할인!
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.01 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11934" data-netfunnel="N" class="eventBtn" title="[대전중앙로] 영화 N차 관람 시 섭섭지 않은 혜택! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/29/3pf5UU8e1DhAkPndINosmsLvkhef7PKm.jpg" alt="[대전중앙로] 영화 N차 관람 시 섭섭지 않은 혜택!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대전중앙로] 영화 N차 관람 시 섭섭지 않은 혜택!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.26 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11896" data-netfunnel="N" class="eventBtn" title="[대전유성] 유성점에서 영화볼때 마다 혜택이 N차로! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/21/a9iXd6ZQ6MfWkVNkTT8eT3aU0GsK6q15.jpg" alt="[대전유성] 유성점에서 영화볼때 마다 혜택이 N차로!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대전유성] 유성점에서 영화볼때 마다 혜택이 N차로!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.21 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11936" data-netfunnel="N" class="eventBtn" title="[북대구(칠곡)] 외부주차장 이용시 영화 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/29/sLGMCg2kBndVHXQNHYkXSLXM8JEOgriF.jpg" alt="[북대구(칠곡)] 외부주차장 이용시 영화 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [북대구(칠곡)] 외부주차장 이용시 영화 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.15 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11895" data-netfunnel="N" class="eventBtn" title="[남춘천] 콤보메뉴 먹고! 행운복권 긁자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/21/XvmnmkUWJBW2qucdXak1ci1c09qWjqq0.jpg" alt="[남춘천] 콤보메뉴 먹고! 행운복권 긁자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [남춘천] 콤보메뉴 먹고! 행운복권 긁자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.14 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>                                  
+                                        <li>
+                                            <a href="#" data-no="11937" data-netfunnel="N" class="eventBtn" title="[광명AK플라자, 광명소하] 광명에서 영화보고 굿즈도 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/29/JxiUeDKBau4vUPiCBT0tQkDCcATam5IN.jpg" alt="[광명AK플라자, 광명소하] 광명에서 영화보고 굿즈도 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광명AK플라자, 광명소하] 광명에서 영화보고 굿즈도 받자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11897" data-netfunnel="N" class="eventBtn" title="[백석] 백석지점 예매하고 교보문고 GO!GO! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/21/anIVmLmjKlFNx2yo52C8Gz3Q2c2DkZzV.jpg" alt="[백석] 백석지점 예매하고 교보문고 GO!GO!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [백석] 백석지점 예매하고 교보문고 GO!GO!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.05 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11861" data-netfunnel="N" class="eventBtn" title="[마곡, 화곡] 청소년 누구나 영화 3천원 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/15/OB8XSsVqSpEAsgQANNKAiYJTsEJUC2Xl.jpg" alt="[마곡, 화곡] 청소년 누구나 영화 3천원 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [마곡, 화곡] 청소년 누구나 영화 3천원 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11860" data-netfunnel="N" class="eventBtn" title="[대구신세계] 대구신세계에서 즐기는 풀코스! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/15/qj0YePlDrcBVjUp1MQMjk5MTWbqdWjRM.jpg" alt="[대구신세계] 대구신세계에서 즐기는 풀코스!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대구신세계] 대구신세계에서 즐기는 풀코스!
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11829" data-netfunnel="N" class="eventBtn" title="[경기남부지역] 선호지점 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/07/fEXvv2t1tIBaWtTbClFMsxzDuTxUTEKX.jpg" alt="[경기남부지역] 선호지점 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [경기남부지역] 선호지점 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11785" data-netfunnel="N" class="eventBtn" title="[부산대,사상] '영팝 패키지’ 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/01/ojHfezTX8YclUua5dBkvFOEcIlV1kq35.jpg" alt="[부산대,사상] '영팝 패키지’ 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산대,사상] '영팝 패키지’ 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11786" data-netfunnel="N" class="eventBtn" title="[전주혁신] SNS 팔로우 하고 할인 받자 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/01/XOp0o7YD9EWCSpUcJG2STHL5b6ddH1oM.jpg" alt="[전주혁신] SNS 팔로우 하고 할인 받자" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [전주혁신] SNS 팔로우 하고 할인 받자
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.12.18
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11830" data-netfunnel="N" class="eventBtn" title="[경기남부지역] 모바일오더 전용 할인 콤보 런칭 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/07/tKSYzb5QBqEmoF9byxmWTKPHVc7Gsz4j.jpg" alt="[경기남부지역] 모바일오더 전용 할인 콤보 런칭" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [경기남부지역] 모바일오더 전용 할인 콤보 런칭
+                                                </p>
+                                                <p class="date">
+                                                    2022.09.01 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11833" data-netfunnel="N" class="eventBtn" title="[사상] 신라대학교 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/07/ovZJ1epW05CNadtkmI4rDyt6M50ytsE4.jpg" alt="[사상] 신라대학교 할인 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [사상] 신라대학교 할인 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.08.30 ~ 2023.08.29
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11756" data-netfunnel="N" class="eventBtn" title="[대구이시아] 롯데아울렛 구매 영수증 제시하면 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/25/s1Vm6KT32KVS0dvMRhcn1viibhFbqqEl.jpg" alt="[대구이시아] 롯데아울렛 구매 영수증 제시하면" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대구이시아] 롯데아울렛 구매 영수증 제시하면
+                                                </p>
+                                                <p class="date">
+                                                    2022.08.22 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11724" data-netfunnel="N" class="eventBtn" title="[세종(조치원)] 월,화,수요일은 온라인예매하자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/18/zy1mmVGX5BpPdsaCu5lYKvXOae0bTbk2.jpg" alt="[세종(조치원)] 월,화,수요일은 온라인예매하자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [세종(조치원)] 월,화,수요일은 온라인예매하자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.08.18 ~ 2022.12.28
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11757" data-netfunnel="N" class="eventBtn" title="[부산대] 이마트 금정점 구매 영수증으로 할인 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/25/zMOPjojHZ3wOtxw0hxaTb63oUFM1u2LB.jpg" alt="[부산대] 이마트 금정점 구매 영수증으로 할인 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산대] 이마트 금정점 구매 영수증으로 할인 받자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.08.15 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11723" data-netfunnel="N" class="eventBtn" title="[부산경남지역] 부산엑스더스카이 전망대 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/18/gz7n6zFoBicDdO3yoIV71XIMFTcuusoN.jpg" alt="[부산경남지역] 부산엑스더스카이 전망대 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산경남지역] 부산엑스더스카이 전망대 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.08.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11634" data-netfunnel="N" class="eventBtn" title="[세종(조치원)] 당신의 마음을 스크린에 담아보세요! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/28/70T2tNQR5aVQafo9cxZsoWqEbdwiq56o.jpg" alt="[세종(조치원)] 당신의 마음을 스크린에 담아보세요!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [세종(조치원)] 당신의 마음을 스크린에 담아보세요!
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.28 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11608" data-netfunnel="N" class="eventBtn" title="[송도] 메가박스 영화티켓으로 '마술키트' 받자 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/21/wVwr60ABmcs6hU5wj1xZV8FTbowaI3zP.jpg" alt="[송도] 메가박스 영화티켓으로 '마술키트' 받자" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [송도] 메가박스 영화티켓으로 '마술키트' 받자
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.15 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11579" data-netfunnel="N" class="eventBtn" title="[사상] 이마트 사상점 구매 영수증으로 할인 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/14/TcBx8Gc9wjiZXPePOo0jbipp0TTBpPMX.jpg" alt="[사상] 이마트 사상점 구매 영수증으로 할인 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [사상] 이마트 사상점 구매 영수증으로 할인 받자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.15 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11578" data-netfunnel="N" class="eventBtn" title="[양산] 매점에서 포인트 쓰고  추가 할인 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/14/Uqja1WFOZGpi1Z8zOud1ljrqGDYiCc1L.jpg" alt="[양산] 매점에서 포인트 쓰고  추가 할인 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [양산] 매점에서 포인트 쓰고  추가 할인 받자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.14 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11580" data-netfunnel="N" class="eventBtn" title="[부산대] 중,고등학생!! 할인 받고 영화 보자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/14/AiqmOFZBVhyx8nmw6lvFNdNOAZu1HgvI.jpg" alt="[부산대] 중,고등학생!! 할인 받고 영화 보자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산대] 중,고등학생!! 할인 받고 영화 보자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.11 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11577" data-netfunnel="N" class="eventBtn" title="[양산라피에스타] 하나로마트 구매 영수증 제시하면 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/07/14/XnvV8qNxNhFxOCWLRKzlQP1I1luGoYF6.jpg" alt="[양산라피에스타] 하나로마트 구매 영수증 제시하면" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [양산라피에스타] 하나로마트 구매 영수증 제시하면
+                                                </p>
+                                                <p class="date">
+                                                    2022.07.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11530" data-netfunnel="N" class="eventBtn" title="[사상] 에어부산 임직원 제휴 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/06/30/t6gIMFHqjR0JKdauS4VaN1gyJhmxD9st.jpg" alt="[사상] 에어부산 임직원 제휴 할인 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [사상] 에어부산 임직원 제휴 할인 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.30 ~ 2022.12.31
+                                                </p>
+                                            </a>                                   
+                                        </li>                                 
+                                        <li>
+                                            <a href="#" data-no="11503" data-netfunnel="N" class="eventBtn" title="[광명AK플라자, 광명소하] 메가박스에서 광명 찾자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/06/22/OSiA64w4OrEyfK5Zgu8myvWqiAwiJGAf.jpg" alt="[광명AK플라자, 광명소하] 메가박스에서 광명 찾자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광명AK플라자, 광명소하] 메가박스에서 광명 찾자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.27 ~ 2022.12.20
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11502" data-netfunnel="N" class="eventBtn" title="[전대] 북구 구민과 함께 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/06/22/Cism0O56EwMiTcOhceDbEOjlUrMgNUMC.jpg" alt="[전대] 북구 구민과 함께" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [전대] 북구 구민과 함께
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.22 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11001" data-netfunnel="N" class="eventBtn" title="[부산경남] 부산경남 직영점 관람권 패키지 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/06/08/WuD9j1j3ttUFL3aF9ZNueckkRPyKgL01.jpg" alt="[부산경남] 부산경남 직영점 관람권 패키지" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산경남] 부산경남 직영점 관람권 패키지
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.01 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11288" data-netfunnel="N" class="eventBtn" title="[코엑스] 프로포즈 인 프라이빗 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/04/22/JfazFggntygIWVR2CJH25BH6XEjmPKHb.jpg" alt="[코엑스] 프로포즈 인 프라이빗" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [코엑스] 프로포즈 인 프라이빗
+                                                </p>
+                                                <p class="date">
+                                                    2022.04.22 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11151" data-netfunnel="N" class="eventBtn" title="[성수] 피크닉패키지 들고 서울숲 나들이 가자 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/04/22/qzt9gbGvveCDyfX3fZy5bh1sN3sHOA8c.jpg" alt="[성수] 피크닉패키지 들고 서울숲 나들이 가자" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [성수] 피크닉패키지 들고 서울숲 나들이 가자
+                                                </p>
+                                                <p class="date">
+                                                    2022.04.22 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11290" data-netfunnel="N" class="eventBtn" title="[양산라피에스타] 학생증 제시 시 영화 3천원 할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/04/22/hOt6tX0M1SSxkVNXj218OITCDKvEm8pT.jpg" alt="[양산라피에스타] 학생증 제시 시 영화 3천원 할인!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [양산라피에스타] 학생증 제시 시 영화 3천원 할인!
+                                                </p>
+                                                <p class="date">
+                                                    2022.04.07 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11183" data-netfunnel="N" class="eventBtn" title="[양산] 학생증 인증하고 할인 받자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/03/30/3voFvKO1jS1cVYeyOHNgnW7y6UalckW6.jpg" alt="[양산] 학생증 인증하고 할인 받자!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [양산] 학생증 인증하고 할인 받자!
+                                                </p>
+                                                <p class="date">
+                                                    2022.04.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11184" data-netfunnel="N" class="eventBtn" title="[대구이시아] 기념일 패키지 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/03/30/auK52q3mGilOdkB0YKv8qScERD3tSie7.jpg" alt="[대구이시아] 기념일 패키지" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대구이시아] 기념일 패키지
+                                                </p>
+                                                <p class="date">
+                                                    2022.03.30 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11157" data-netfunnel="N" class="eventBtn" title="[부산경남지역] 팝콘하면 MEGABOX! 단체 전용 팝콘 런칭! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/03/24/Uu2Uzqsc0oX1l0RFHB7cJ0Mfq6SsAkMl.jpg" alt="[부산경남지역] 팝콘하면 MEGABOX! 단체 전용 팝콘 런칭!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산경남지역] 팝콘하면 MEGABOX! 단체 전용 팝콘 런칭!
+                                                </p>
+                                                <p class="date">
+                                                    2022.03.24 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11210" data-netfunnel="N" class="eventBtn" title="[양산] 다시 만나요! 메가박스 양산! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/04/04/CrwnnSMyMGLfEDLxSh19QUshKyl0m9E5.jpg" alt="[양산] 다시 만나요! 메가박스 양산!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [양산] 다시 만나요! 메가박스 양산!
+                                                </p>
+                                                <p class="date">
+                                                    2022.03.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11037" data-netfunnel="N" class="eventBtn" title="[광주상무] 공무원증 할인이 된다고? 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/24/b7LYXyIO0A2hpBMPul5wzApv5AB36lYd.jpg" alt="[광주상무] 공무원증 할인이 된다고?" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광주상무] 공무원증 할인이 된다고?
+                                                </p>
+                                                <p class="date">
+                                                    2022.02.24 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10945" data-netfunnel="N" class="eventBtn" title="[경기동부지역] 2022년 우린 깐부! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/04/8vVI2CNDtCjCdMZquAdjgaD3MBmtYxRG.jpg" alt="[경기동부지역] 2022년 우린 깐부!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [경기동부지역] 2022년 우린 깐부!
+                                                </p>
+                                                <p class="date">
+                                                    2022.02.03 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10923" data-netfunnel="N" class="eventBtn" title="[수원] 이젠 집에서 영화관 팝콘을 즐기세요! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/26/Cy801OFJSETVMh92xEcjzJhMcr0DszZ9.jpg" alt="[수원] 이젠 집에서 영화관 팝콘을 즐기세요!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [수원] 이젠 집에서 영화관 팝콘을 즐기세요!
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.24 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10890" data-netfunnel="N" class="eventBtn" title="[광주하남] 미취학 아동이라면? 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/19/K9ffvH9SJ7oS3bVad4CVj1ah9gE1bGBz.jpg" alt="[광주하남] 미취학 아동이라면?" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광주하남] 미취학 아동이라면?
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.19 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>                         
+                                        <li>
+                                            <a href="#" data-no="10821" data-netfunnel="N" class="eventBtn" title="[광주하남] 공무원증 할인이 된다고? 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/05/2VQL8ng7J02knrnzwgSExUQZVgqyZdm3.jpg" alt="[광주하남] 공무원증 할인이 된다고?" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [광주하남] 공무원증 할인이 된다고?
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.05 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10824" data-netfunnel="N" class="eventBtn" title="<뉴욕 메트로폴리탄 오페라> 시즌 2022 라인업 (코엑스, 센트럴, 성수, 킨텍스, 분당, 목동) 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/05/sOJaxilAt6HbGjjwoXdTferKjpGQVzgZ.jpg" alt="<뉴욕 메트로폴리탄 오페라> 시즌 2022 라인업 (코엑스, 센트럴, 성수, 킨텍스, 분당, 목동)" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    &lt;뉴욕 메트로폴리탄 오페라&gt; 시즌 2022 라인업 (코엑스, 센트럴, 성수, 킨텍스, 분당, 목동)
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.05 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11126" data-netfunnel="N" class="eventBtn" title="[코엑스] SK텔레콤 임직원 영화 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/03/18/KxC6gr4sXeRl3j7wWxW7oRQ5eeas3U8B.jpg" alt="[코엑스] SK텔레콤 임직원 영화 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [코엑스] SK텔레콤 임직원 영화 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11036" data-netfunnel="N" class="eventBtn" title="[코엑스] 서울종합예술학교 제휴 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/24/0IMi3TOXt58FTvG2el6rewRnqztiVSlW.jpg" alt="[코엑스] 서울종합예술학교 제휴 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [코엑스] 서울종합예술학교 제휴 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11035" data-netfunnel="N" class="eventBtn" title="[코엑스] 봉은사 신도 &amp; 종교인 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/24/YZJRYbhdXSYR6UkDPyTy4CNh8egY9tjU.jpg" alt="[코엑스] 봉은사 신도 &amp; 종교인 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [코엑스] 봉은사 신도 &amp; 종교인 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>              
+                                        <li>
+                                            <a href="#" data-no="11034" data-netfunnel="N" class="eventBtn" title="[코엑스] 아쿠아리움도 보고! 영화도 보고! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/02/24/YF5AmhqN3YntC3fjerYdwc5sXpQtlFjC.jpg" alt="[코엑스] 아쿠아리움도 보고! 영화도 보고!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [코엑스] 아쿠아리움도 보고! 영화도 보고!
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10918" data-netfunnel="N" class="eventBtn" title="[파주금촌] 농협 임직원 제휴 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/26/B67ka1iD0f3kyNxQXohBPdRUj0vfOUkU.jpg" alt="[파주금촌] 농협 임직원 제휴 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [파주금촌] 농협 임직원 제휴 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10856" data-netfunnel="N" class="eventBtn" title="[삼천포] 아르떼리조트 이용객이라면? 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/12/TZiwNLGbH332xRJiqxGC3coOrRZXUMp4.jpg" alt="[삼천포] 아르떼리조트 이용객이라면?" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [삼천포] 아르떼리조트 이용객이라면?
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10826" data-netfunnel="N" class="eventBtn" title="[부산대] 22년도 금정구 구민 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/05/7WaPVaeJaSqwhMA4xOxJpfHmz4V3kW7d.jpg" alt="[부산대] 22년도 금정구 구민 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [부산대] 22년도 금정구 구민 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10917" data-netfunnel="N" class="eventBtn" title="[인천논현] 농협 임직원 제휴 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/26/OA1KwcUsQW2Z06VNyYmhO48C2kl8bMqc.jpg" alt="[인천논현] 농협 임직원 제휴 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [인천논현] 농협 임직원 제휴 할인
+                                                </p>
+                                                <p class="date">
+                                                    2022.01.01 ~ 2022.12.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="9787" data-netfunnel="N" class="eventBtn" title="[대구이시아] 라운지 이용권 런칭 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2021/05/24/o0cHVKJPDqINwJaF28FBJkGKPlCrDaJO.jpg" alt="[대구이시아] 라운지 이용권 런칭" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대구이시아] 라운지 이용권 런칭
+                                                </p>
+                                                <p class="date">
+                                                    2021.12.27 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10857" data-netfunnel="N" class="eventBtn" title="[수원] 농협 임직원 제휴 할인 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/01/12/AN3CpOSli9Kj3f4xiD2OFZO6XG2qhVA1.jpg" alt="[수원] 농협 임직원 제휴 할인 이벤트" onerror="noImg(this);"></p>            
+                                                <p class="tit">
+                                                    [수원] 농협 임직원 제휴 할인 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2021.12.10 ~ 2022.11.30
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab4 종료-->
+                    <!--tab5 시작-->
+                    <div id="tab-5" class="tab-content">
+                        <div id="event-list-wrap">
+                            <div class="inner-wrap">
+                                <div class="tit-util mt40">
+                                    <p class="result-count"><strong>전체 <b>20</b>건</strong></p>
+                                </div>
+                                <div class="event-list ">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12136" data-netfunnel="N" class="eventBtn" title="[카카오뱅크X메가박스] 메가박스와 26일저금 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/03/LQCXI2AXRmdALAyd39mRUkwt8T1S0Spc.jpg" alt="[카카오뱅크X메가박스] 메가박스와 26일저금" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [카카오뱅크X메가박스] 메가박스와 26일저금
+                                                </p>
+                                                <p class="date">
+                                                    2022.11.07 ~ 2022.11.20
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12026" data-netfunnel="N" class="eventBtn" title="[삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/17/rE1UGlldvtA2gNbtkyNdrtXWK8VNtxht.jpg" alt="[삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [삼성페이X메가박스] 멤버십 등록 + 티켓 담고 다양한 혜택 받으세요!
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.17 ~ 2022.11.20
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11739" data-netfunnel="N" class="eventBtn" title="[광주은행X메가박스] 메가박스 카드 런칭기념 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/19/Xrp5Tofqsk1VhCZhJKfyuUjmtO9nVbVi.jpg" alt="[광주은행X메가박스] 메가박스 카드 런칭기념 이벤트" onerror="noImg(this);"></p>
+                    
+                                                <p class="tit">
+                                                    [광주은행X메가박스] 메가박스 카드 런칭기념 이벤트
+                                                </p>
+                    
+                                                <p class="date">
+                                                    2022.08.22 ~ 2023.02.28
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11263" data-netfunnel="N" class="eventBtn" title="내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/08/05/hJ4pNRGMutomAaucRjyj0ganFC3yUGOg.jpg" alt="내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    내 차 보험료 확인하고 영화 1만원 할인쿠폰 받으세요!
+                                                </p>
+                                                <p class="date">
+                                                    2022.04.18 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11438" data-netfunnel="N" class="eventBtn" title="[대한항공X메가박스] SKYPASS 회원 할인 프로모션 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/05/31/4pLdCNd6S9Vl2JGPW4Q68KSPJ28axiUc.jpg" alt="[대한항공X메가박스] SKYPASS 회원 할인 프로모션" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [대한항공X메가박스] SKYPASS 회원 할인 프로모션
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.02 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="10604" data-netfunnel="N" class="eventBtn" title="[알뜰교통카드 X 메가박스] 알뜰하게 영화보고 콤보 구매하는 방법 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2021/11/04/bgOu0U2V1FXLtQ0PbZRxj5SPENg0UzpQ.jpg" alt="[알뜰교통카드 X 메가박스] 알뜰하게 영화보고 콤보 구매하는 방법" onerror="noImg(this);"></p>
+                    
+                                                <p class="tit">
+                                                    [알뜰교통카드 X 메가박스] 알뜰하게 영화보고 콤보 구매하는 방법
+                                                </p>
+                    
+                                                <p class="date">
+                                                    2021.11.04 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>           
+                                        <li>
+                                            <a href="#" data-no="8865" data-netfunnel="N" class="eventBtn" title="[메가박스X현대카드] 현대M포인트 금토일 5,000원 할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/10/27/iaqx1sdAqvW8HLxO5Rsevdh08yYPdoDn.jpg" alt="[메가박스X현대카드] 현대M포인트 금토일 5,000원 할인!" onerror="noImg(this);"></p>
+                    
+                                                <p class="tit">
+                                                    [메가박스X현대카드] 현대M포인트 금토일 5,000원 할인!
+                                                </p>
+                    
+                                                <p class="date">
+                                                    2020.10.29 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="8820" data-netfunnel="N" class="eventBtn" title="[도서상품권] 온라인 예매도 도서문화상품권으로 간편하게! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/10/15/OpuLwqCq8mWRzy9x20xA8Vphz5FiIw4q.jpg" alt="[도서상품권] 온라인 예매도 도서문화상품권으로 간편하게!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [도서상품권] 온라인 예매도 도서문화상품권으로 간편하게!
+                                                </p>
+                                                <p class="date">
+                                                    2020.10.15 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="8782" data-netfunnel="N" class="eventBtn" title="[메가박스X컬쳐랜드] 문화상품권으로 메가박스를 즐기자! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/10/06/nWvPu6YhzejumPOeP9aYH6ovOsTtc1Cc.jpg" alt="[메가박스X컬쳐랜드] 문화상품권으로 메가박스를 즐기자!" onerror="noImg(this);"></p>
+                    
+                                                <p class="tit">
+                                                    [메가박스X컬쳐랜드] 문화상품권으로 메가박스를 즐기자!
+                                                </p>
+                                                <p class="date">
+                                                    2020.10.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="8724" data-netfunnel="N" class="eventBtn" title="[제로페이] 이제는 영화볼 때도 제로페이 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/09/14/gyREinDV8ZpKmHoYikOdfR4vu0iKdT4Q.jpg" alt="[제로페이] 이제는 영화볼 때도 제로페이" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [제로페이] 이제는 영화볼 때도 제로페이
+                                                </p>
+                                                <p class="date">
+                                                    2020.09.14 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="9198" data-netfunnel="N" class="eventBtn" title="KT멤버십 고객 메가박스 영화 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2021/02/01/QnqACuKoPlMtYGM262yAyvmV0TGAt4Ui.jpg" alt="KT멤버십 고객 메가박스 영화 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    KT멤버십 고객 메가박스 영화 할인
+                                                </p>
+                                                <p class="date">
+                                                    2021.02.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="9187" data-netfunnel="N" class="eventBtn" title="U+멤버십 고객 영화 2,000원 할인 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2021/01/28/KFa8pQA1xZ0Ah1p8oHUNQVeDNStXkS4L.jpg" alt="U+멤버십 고객 영화 2,000원 할인" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    U+멤버십 고객 영화 2,000원 할인
+                                                </p>
+                                                <p class="date">
+                                                    2021.02.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="9043" data-netfunnel="N" class="eventBtn" title="[롯데멤버스] L.POINT로 할인 받고 2% 적립까지! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/12/17/e3BLbNx56lNPYNrjtoiBKfg2e9cNTk3U.jpg" alt="[롯데멤버스] L.POINT로 할인 받고 2% 적립까지!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [롯데멤버스] L.POINT로 할인 받고 2% 적립까지!
+                                                </p>
+                                                <p class="date">
+                                                    2020.12.17 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="8964" data-netfunnel="N" class="eventBtn" title="[메가박스X조인스프라임] 영화와 잡지를 한 번에! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/11/24/vXEn7aPdmfiYRjlbVgZr0VBsHwMUwIKP.png" alt="[메가박스X조인스프라임] 영화와 잡지를 한 번에!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [메가박스X조인스프라임] 영화와 잡지를 한 번에!
+                                                </p>
+                                                <p class="date">
+                                                    2020.11.24 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12079" data-netfunnel="N" class="eventBtn" title="[메가박스X더쎈카드] 더쎈카드 연말정산 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/24/aCeSj4Dqi7WmoSmAyVAfgCs2ESjtSLdp.jpg" alt="[메가박스X더쎈카드] 더쎈카드 연말정산 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [메가박스X더쎈카드] 더쎈카드 연말정산 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.24 ~ 2023.01.01
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="11433" data-netfunnel="N" class="eventBtn" title="[에버랜드X메가박스] 제휴 할인 프로모션! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/05/31/T3pen25z81VLanUbGoptkW6F0R3yrkuI.jpg" alt="[에버랜드X메가박스] 제휴 할인 프로모션!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    [에버랜드X메가박스] 제휴 할인 프로모션!
+                                                </p>
+                                                <p class="date">
+                                                    2022.06.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="5118" data-netfunnel="N" class="eventBtn" title="메가박스 마스터콤보를 제공받을 수 있는 카드는? 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2021/03/02/7Wv9ErsevpJobv4RTyW3mNTbuCegoJfl.jpg" alt="메가박스 마스터콤보를 제공받을 수 있는 카드는?" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    메가박스 마스터콤보를 제공받을 수 있는 카드는?
+                                                </p>
+                                                <p class="date">
+                                                    2017.01.01 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="5119" data-netfunnel="N" class="eventBtn" title="블루포인트 차감 4천원 할인! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/09/23/C3atIL7mDUDnlblMMKov7yZbH9thOedI.jpg" alt="블루포인트 차감 4천원 할인!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    블루포인트 차감 4천원 할인!
+                                                </p>
+                                                <p class="date">
+                                                    2016.10.07 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="4443" data-netfunnel="N" class="eventBtn" title="메가박스 하나카드 콤보 이벤트 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/02/04/y8iDbdor9E21ccFsJMyhyoE9YODKiKOy.jpg" alt="메가박스 하나카드 콤보 이벤트" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    메가박스 하나카드 콤보 이벤트
+                                                </p>
+                                                <p class="date">
+                                                    2016.03.04 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="3916" data-netfunnel="N" class="eventBtn" title="해피포인트로 2000원 알차게 영화보는 방법! 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2020/11/11/7zZFIneF9efbrMAybQh2NRAxkvTdfTD5.jpg" alt="해피포인트로 2000원 알차게 영화보는 방법!" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    해피포인트로 2000원 알차게 영화보는 방법!
+                                                </p>
+                                                <p class="date">
+                                                    2015.01.06 ~ 2022.12.31
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab5 종료-->
+                    <!--tab6 시작-->
+                    <div id="tab-6" class="tab-content">
+                        <div id="event-list-wrap">
+                            <div class="inner-wrap">
+                                <div class="tit-util mt40">
+                                    <p class="result-count"><strong>전체 <b>2</b>건</strong></p>
+                                </div>
+                                <div class="event-list ">
+                                    <input type="hidden" id="totCount" name="totCount" value="2">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-no="12125" data-netfunnel="N" class="eventBtn" title="<올빼미> 메가박스 회원 시사회 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/11/02/IyhwswarfIIbUZojJtmAEHS3Uxyrs39S.jpg" alt="<올빼미> 메가박스 회원 시사회" onerror="noImg(this);"></p>
+                                                <p class="tit">
+                                                    &lt;올빼미&gt; 메가박스 회원 시사회
+                                                </p>
+                                                <p class="date">
+                                                    2022.11.02 ~ 2022.11.13
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-no="12082" data-netfunnel="N" class="eventBtn" title="<동감> 메가박스 회원 시사회 상세보기">
+                                                <p class="img"> <img src="https://img.megabox.co.kr/SharedImg/event/2022/10/24/t3Qyl6VL0mNgMHSYsiEMg2aI4VETko9u.jpg" alt="<동감> 메가박스 회원 시사회" onerror="noImg(this);"></p>
+                    
+                                                <p class="tit">
+                                                    &lt;동감&gt; 메가박스 회원 시사회
+                                                </p>
+                                                <p class="date">
+                                                    2022.10.24 ~ 2022.11.09
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--tab6 종료-->
+                </div><!-- container -->
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <!-- footer-top -->
+        <div class="footer-top">
+            <div class="inner-wrap">
+                <ul class="fnb">
+                    <li><a href="/megaboxinfo" title="회사소개 페이지로 이동">회사소개</a></li>
+                    <li><a href="/recruit" title="인재채용 페이지로 이동">인재채용</a></li>
+                    <li><a href="/socialcontribution" title="사회공헌 페이지로 이동">사회공헌</a></li>
+                    <li><a href="/partner" title="제휴/광고/부대사업문의 페이지로 이동">제휴/광고/부대사업문의</a></li>
+                    <li><a href="/support/terms" title="이용약관 페이지로 이동">이용약관</a></li>
+                    <li><a href="/support/lcinfo" title="위치기반서비스 이용약관 페이지로 이동">위치기반서비스 이용약관</a></li>
+                    <li class="privacy"><a href="/support/privacy" title="개인정보처리방침 페이지로 이동">개인정보처리방침</a></li>
+                    <li><a href="https://jebo.joonganggroup.com/main.do" target="_blank" title="윤리경영 페이지로 이동">윤리경영</a></li>
+                </ul>
+    
+                <a href="#layer_looking_theater" class="btn-looking-theater" title="극장찾기"><i class="iconset ico-footer-search"></i> 극장찾기</a>
+            </div>
+        </div>
+        <!--// footer-top -->
+        <!-- footer-bottom -->
+        <div class="footer-bottom">
+            <div class="inner-wrap">
+                <div class="ci">MEGABOX : Life Theater</div>
+    
+                <div class="footer-info">
+                    <div>
+                        <address>서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵주경기장)</address>
+                        <p>ARS 1544-0070</p>
+                    </div>
+                    <p>대표자명 홍정인</p>
+                    <p>· 개인정보보호책임자 공성진</p>
+                    <p>· 사업자등록번호 211-86-59478</p>
+                    <p>· 통신판매업신고번호 제 2020-서울마포-4545 호</p>
+                    <p class="copy">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</p>
+                </div>
+                <div class="footer-sns">
+                    <a href="https://www.youtube.com/onmegabox" target="_blank" title="MEGABOX 유튜브 페이지로 이동"><i class="iconset ico-youtubeN">유튜브</i></a>
+                    <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동"><i class="iconset ico-instagramN">인스타그램</i></a>
+                    <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동"><i class="iconset ico-facebookN">페이스북</i></a>
+                    <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동"><i class="iconset ico-twitterN">트위터</i></a>
+                </div>
+            </div>
+        </div>
+        <!--// footer-bottom -->
+        <div id="layer_looking_theater" class="layer-looking-theater"></div>
+    </footer>
+</body>
+</html>

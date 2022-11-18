@@ -1,0 +1,126 @@
+/* 로그인 뒤 배경 */
+.login_root {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.546);
+    top: 80px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 300;
+}
+/* 로그인창 전체 */
+.login1 {
+    /* display: none; */
+    background-color: #fff;
+    width: 850px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 400;
+    height: 484px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 6px 2px rgb(0 0 0 / 10%);
+}
+/* 보라 제외 로그인창 */
+.login_wrap {
+    width: 810px;
+    height: 387px;
+    /* background-color: red; /* 삭제 */
+    position: relative;
+    top: 70px;
+    margin: 0 auto;
+}
+.login1 .purple_var {
+    width: 850px;
+    height: 45px;
+    background-color: #6e3abb;
+    position: absolute;
+    
+}
+.login1 .purple_var span{
+    line-height: 45px;
+    color: white;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.login1 .left_login ,.login .right_login{
+    width: 380px;
+    height: 380px;
+    /*border: 1px solid #111; /* 삭제 */
+}
+.login1 .left_login {
+    position: absolute;
+}
+.login1 .left_login input {
+    margin-bottom: 15px;
+}
+.login1 .right_login {
+    position: relative;
+    right: 0;
+    float: right;
+}
+.login1 .right_login .ad {
+    /* position: absolute; */
+    right: 10px;
+    top: 10px;
+    height: 360px;
+    width: 360px;
+}
+.login1 .poplogClose {
+    position: absolute;
+    right: 30px;
+    /* top: 5px; */
+    z-index: 100;
+    background-color: #6e3abb;
+    height: 40px;
+    width: 40px;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+}
+.login1 .poplogClose:hover {
+    font-weight: 500;
+}
+.login_button {
+    background-color: gray; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 161px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/* 
+.login_button:hover {
+    background-color: #6e3abb;
+} */
+
+.left_login .login_input {
+
+    box-sizing: border-box;
+    margin: 10px 0 0;
+    padding: 10px 10px;
+    width: 350px;
+}
+.left_login tr td {
+    text-align: "center"
+}
+.login_three {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+.login_three td {
+    padding: 80px 0 0;
+}
+.dis_none {
+    display: none;
+}
+
+.purple_var > span {
+    
+}

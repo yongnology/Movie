@@ -1,0 +1,674 @@
+@charset "utf-8";
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: NanumBarunGothic;
+  font-weight: 400;
+  src: url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicSubset.eot);
+  src: url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicSubset.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicSubset.woff)
+      format("woff"),
+    url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicSubset.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: NanumBarunGothic;
+  font-weight: 700;
+  src: url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicBoldSubset.eot);
+  src: url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicBoldSubset.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicBoldSubset.woff)
+      format("woff"),
+    url(https://img.megabox.co.kr/static/pc/font/nanum/NanumBarunGothicBoldSubset.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Light.eot);
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Light.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Light.woff)
+      format("woff"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Light.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Regular.eot);
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Regular.woff)
+      format("woff"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Medium.eot);
+  src: url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Medium.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Medium.woff)
+      format("woff"),
+    url(https://img.megabox.co.kr/static/pc/font/roboto/Roboto-Medium.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: text-security-disc;
+  src: url(../font/disc/disc-font.eot);
+  src: url(../font/disc/disc-font.eot?#iefix) format("embedded-opentype"),
+    url(../font/disc/disc-font.woff2) format("woff2"),
+    url(../font/disc/disc-font.woff) format("woff"),
+    url(../font/disc/disc-font.ttf) format("truetype"),
+    url(../font/disc/disc-font.svg#text-security) format("svg");
+}
+
+body {
+  overflow: auto;
+  overflow-y: scroll;
+  letter-spacing: 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #444;
+  font-weight: 400;
+  font-family: NanumBarunGothic, Dotum, "돋움", sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#contents {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-wrap {
+  position: relative;
+  width: 1100px;
+}
+.inner-wrap:after,
+.inner-wrap:before {
+  content: "";
+  display: table;
+}
+.inner-wrap:after {
+  clear: both;
+}
+.inner-wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h2.tit {
+  padding: 40px 0 26px 0;
+  font-size: 1.8666em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: #222;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+h3.tit {
+  margin: 0;
+  padding: 0 0 16px 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #503396;
+  line-height: 1.1;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+/*극장*/
+.theater-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  border: 3px solid #686571;
+  border-radius: 10px;
+}
+.theater-box .theater-place > ul > li {
+  float: left;
+  width: 136px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #e0e0e0;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.theater-box .theater-place > ul > li.on .theater-list {
+  display: block;
+}
+
+.theater-box .theater-place {
+  width: 100%;
+  height: 48px;
+}
+.theater-box .theater-place > ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.theater-box .theater-place > ul > li {
+  float: left;
+  width: 136px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #e0e0e0;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.theater-box .theater-place > ul > li > button {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+}
+.theater-box .theater-place > ul > li.on {
+  background: #555;
+  border: 1px solid #555;
+}
+.theater-box .theater-place > ul > li.on > button {
+  color: #fff;
+}
+.theater-box .theater-place ul li:last-child,
+.theater-box .theater-place > ul > li:first-child {
+  width: 138px;
+}
+.theater-box .theater-place > ul > li:first-child {
+  width: 140px;
+}
+.theater-box .theater-place > ul > li:last-child {
+  border-right: none;
+}
+.theater-box .theater-place > ul > li.on .theater-list {
+  display: block;
+}
+.theater-box .theater-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 100%;
+  min-height: 85px;
+  padding: 30px 0;
+}
+.theater-box .theater-list ul {
+  overflow: hidden;
+  width: 100%;
+}
+.theater-box .theater-list ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.theater-box .theater-list ul li {
+  position: relative;
+  float: left;
+  width: 25%;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 40px;
+}
+.theater-box .theater-list ul li a {
+  color: #444;
+}
+.theater-box .theater-list ul li:nth-child(2):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li:nth-child(3):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li:nth-child(4):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li span.favorit-theater {
+  position: absolute;
+  left: 25px;
+}
+.theater-box .user-theater {
+  position: absolute;
+  padding: 0 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  line-height: 54px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ecf0f4;
+}
+.theater-box .user-theater ul.theater-circle {
+  display: inline-block;
+  margin: 0 20px;
+}
+.theater-box .user-theater ul.theater-circle li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 2px;
+  height: 25px;
+  line-height: 24px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.theater-box .user-theater {
+  float: right;
+  margin-top: 12px;
+}
+.theater-box .theater-list ul li a {
+  color: #444;
+}
+.theater-box .theater-list ul li span.favorit-theater {
+  position: absolute;
+  left: 25px;
+}
+.theater-box .theater-list ul li:nth-child(2):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li:nth-child(3):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li:nth-child(4):after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1000%;
+  background: #e0e0e0;
+}
+.theater-box .theater-list ul li {
+  position: relative;
+  float: left;
+  width: 25%;
+  line-height: 26px;
+  text-align: left;
+  padding-left: 40px;
+}
+.theater-box .theater-list ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.theater-box .theater-list ul {
+  overflow: hidden;
+  width: 100%;
+}
+.theater-box .theater-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  width: 100%;
+  min-height: 85px;
+  padding: 30px 0;
+}
+
+.theater-box .theater-place ul li:last-child,
+.theater-box .theater-place > ul > li:first-child {
+  width: 138px;
+}
+.theater-box .theater-place {
+  width: 100%;
+  height: 48px;
+}
+.theater-box .theater-place > ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.theater-box .theater-place > ul > li.on .theater-list {
+  display: block;
+}
+.theater-box .theater-place > ul > li.on {
+  background: #555;
+  border: 1px solid #555;
+}
+.theater-box .theater-place > ul > li.on > button {
+  color: #fff;
+}
+.theater-box .theater-place > ul > li:first-child {
+  width: 140px;
+}
+.theater-box .theater-place > ul > li:last-child {
+  border-right: none;
+}
+.theater-box .theater-place > ul > li {
+  float: left;
+  width: 136px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #e0e0e0;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.theater-box .theater-place > ul > li > button {
+  display: block;
+  width: 100%;
+  height: 48px;
+  background: 0 0;
+  border: none;
+}
+.theater-box .user-theater a.button.float-r {
+  float: right;
+  margin-top: 12px;
+}
+.theater-box .user-theater ul.theater-circle li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 2px;
+  height: 25px;
+  line-height: 24px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.theater-box .user-theater ul.theater-circle {
+  display: inline-block;
+  margin: 0 20px;
+}
+.theater-box .user-theater {
+  position: absolute;
+  padding: 0 20px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  line-height: 54px;
+  border-radius: 0 0 10px 10px;
+  background-color: #ecf0f4;
+}
+.theater-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  border: 3px solid #686571;
+  border-radius: 10px;
+}
+.ml10 {
+  margin-left: 10px !important;
+}
+
+.user-theater #moveLogin {
+  color: #503396;
+}
+
+.button {
+  display: inline-block;
+  height: 36px;
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 34px;
+  color: #503396;
+  font-weight: 400;
+  border-radius: 4px;
+  font-family: NanumBarunGothic, Dotum, "돋움", sans-serif;
+  text-decoration: none;
+  border: 1px solid #503396;
+  vertical-align: middle;
+  background-color: #fff;
+  cursor: pointer;
+}
+.ico-favo-theater {
+  width: 10px;
+  height: 12px;
+  background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-favo-theater.png);
+}
+
+/*극장이벤트*/
+.event-box {
+  clear: both;
+}
+.event-box > ul {
+  overflow: hidden;
+  line-height: 0;
+}
+.event-box > ul > li .event-txt {
+  position: absolute;
+}
+.event-box > ul > li img {
+  border-radius: 10px;
+  width: 535px;
+  height: 250px;
+}
+.event-box > ul > li:nth-child(1) {
+  float: left;
+}
+.event-box > ul > li:nth-child(2) {
+  float: right;
+}
+.event-box > ul > li {
+  position: relative;
+}
+.event-box > ul > li > a {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tit-util:after {
+  clear: both;
+}
+.tit-util:after,
+.tit-util:before {
+  content: "";
+  display: block;
+}
+.tit-util .tit {
+  float: left;
+  padding: 0 !important;
+  line-height: 1.1;
+}
+.tit-util .right {
+  float: right;
+}
+.tit-util .right a {
+  display: inline-block;
+}
+.tit-util .right .btn-more-cross {
+  float: none;
+}
+.tit-util .more {
+  float: right;
+}
+.tit-util .more i {
+  margin-left: 5px;
+}
+.tit-util .left {
+  float: left;
+}
+
+.mt70 {
+  margin-top: 70px !important;
+}
+.mb15 {
+  margin-bottom: 15px !important;
+}
+.ico-arr-right-gray {
+  overflow: hidden;
+  width: 7px;
+  height: 12px;
+  background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-arr-right-gray.png);
+}
+
+/*공지사항*/
+.table-wrap.divide .scroll {
+  overflow: hidden;
+  overflow-y: auto;
+  align-items: center;
+}
+.table-wrap {
+  position: relative;
+  border-top: 1px solid #555;
+}
+.table-wrap .board-form tr td .alert {
+  margin-top: 5px;
+  color: #e81002;
+  font-size: 0.9333em;
+}
+.board-list p.code {
+  display: inline-block;
+  font-size: 13px;
+  color: #999;
+}
+.board-list p {
+  margin: 0;
+  padding: 0;
+}
+.board-list.line > tbody > tr > td,
+.board-list.line > tbody > tr > th {
+  border-width: 0 1px 1px 0;
+}
+.board-list.line > tbody > tr > td:last-child,
+.board-list.line > tbody > tr > th:last-child {
+  border-width: 0 0 1px 0;
+}
+.board-list.line > thead > tr > th:last-child {
+  border-width: 0 0 1px 0;
+}
+.board-list.line > thead > tr > th {
+  border-width: 0 1px 1px 0;
+}
+.board-list {
+  line-height: 1.3;
+}
+.board-list > tbody > tr > td,
+.board-list > tbody > tr > th {
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-width: 0 0 1px 0;
+  text-align: center;
+}
+.board-list > tbody > tr > td > a,
+.board-list > tbody > tr > th > a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.board-list > tbody > tr > td > a.ellipsis {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-list > tbody > tr > th {
+  text-align: left;
+  font-weight: 400;
+}
+.board-list > thead > tr > th {
+  height: 45px;
+  padding: 3px 10px;
+  color: #222;
+  border: 1px solid #eaeaea;
+  border-width: 0 0 1px 0;
+  background-color: #f2f4f5;
+}
+.board-view .movie-area .caption {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: calc(100% - 510px);
+  height: 300px !important;
+  padding: 20px;
+  border: 1px solid #e4ebf1;
+}
+table caption {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+}
+table select {
+  border-radius: 0;
+}
+table td,
+table th {
+  padding: 0;
+}
+table.center td,
+table.center th {
+  text-align: center;
+}
+table.left td,
+table.left th {
+  text-align: left;
+}
+table {
+  width: 100%;
+  margin-bottom: 100px;
+  border: 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  empty-cells: show;
+}
