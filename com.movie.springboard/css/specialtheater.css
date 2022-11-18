@@ -1,0 +1,185 @@
+.brn-link {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.theater-special-main {
+  background: url(../img/bg-speacial-bg.png) center top no-repeat;
+}
+.theater-special-main p {
+  margin: 0;
+  padding: 0;
+}
+.theater-special-main .brn-link {
+  position: relative;
+  height: 870px;
+}
+.theater-special-main .brn-link .tit-area {
+  padding: 94px 0 0 0;
+}
+.theater-special-main .brn-link .tit-area .tit {
+  font-size: 0;
+  line-height: 0;
+}
+.theater-special-main .brn-link .tit-area .txt {
+  padding: 20px 0 0 0;
+  font-size: 2.1333em;
+  color: #351f66;
+  line-height: 1.2;
+}
+.theater-special-main .brn-link .cell {
+  overflow: hidden;
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.theater-special-main .brn-link .cell.link-boutique {
+  top: 50px;
+  left: 279px;
+  width: 540px;
+  height: 260px;
+  background-image: url(../img/bg-bou.png);
+}
+.theater-special-main .brn-link .cell.link-db {
+  top: 330px;
+  left: 0;
+  width: 820px;
+  height: 260px;
+  background-image: url(../img/bg-db.png);
+}
+.theater-special-main .brn-link .cell.link-mx {
+  top: 610px;
+  left: 280px;
+  width: 540px;
+  height: 260px;
+  background-image: url(../img/bg-mx.png);
+}
+.theater-special-main .brn-link .cell.link-kids {
+  top: 610px;
+  right: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-kids.png);
+}
+.theater-special-main .brn-link .cell.link-comfort {
+  top: 330px;
+  right: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-comfort.png);
+}
+.theater-special-main .brn-link .cell.link-balcony {
+  top: 610px;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-balcony.png);
+}
+.theater-special-main .brn-link .cell.link-first {
+  top: 610px;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-sp2.png);
+}
+.theater-special-main .brn-link .cell.link-private {
+  top: 50px;
+  right: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-private.png);
+}
+.theater-special-main .brn-link .cell.link-puppy {
+  top: 610px;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  background-image: url(../img/bg-puppy.png);
+}
+.theater-special-main .brn-link .cell a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.theater-special-main .brn-link .cell a .link-txt {
+  padding: 30px 20px 30px 30px;
+}
+.theater-special-main .brn-link .cell a .link-txt:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
+  width: 29px;
+  height: 12px;
+  background: url(../img/ico-sp-link.png);
+}
+.theater-special-main .brn-link .cell a .link-txt .tit {
+  padding: 0 0 15px 0;
+  font-size: 1.4666em;
+  line-height: 1.1;
+  font-family: Roboto;
+}
+.theater-special-main .brn-link .cell a .hover {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  border-radius: 10px;
+}
+.theater-special-main .brn-link .cell a:hover .hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.theater-special-main .brn-link .link-boutique a:focus .hover,
+.theater-special-main .brn-link .link-boutique a:hover .hover {
+  background: rgba(81, 46, 26, 0.9) url(../img/bg-bou-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .link-mx a:focus .hover,
+.theater-special-main .brn-link .link-mx a:hover .hover {
+  background: rgba(55, 53, 105, 0.9) url(../img/bg-mx-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .link-db a:focus .hover,
+.theater-special-main .brn-link .link-db a:hover .hover {
+  background: rgba(26, 36, 77, 0.9) url(../img/bg-dolby-logo.png) center
+    no-repeat;
+}
+.theater-special-main .brn-link .link-kids a:focus .hover,
+.theater-special-main .brn-link .link-kids a:hover .hover {
+  background: rgba(207, 141, 0, 0.9) url(../img/bg-kids-logo.png) center
+    no-repeat;
+}
+.theater-special-main .brn-link .link-comfort a:focus .hover,
+.theater-special-main .brn-link .link-comfort a:hover .hover {
+  background: rgba(49, 29, 57, 0.9) url(../img/bg-comfort-logo.png) center
+    no-repeat;
+}
+.theater-special-main .brn-link .link-balcony a:focus .hover,
+.theater-special-main .brn-link .link-balcony a:hover .hover {
+  background: rgba(46, 44, 62, 0.9) url(../img/bg-balcony-logo.png) center
+    no-repeat;
+}
+.theater-special-main .brn-link .link-first a:focus .hover,
+.theater-special-main .brn-link .link-first a:hover .hover {
+  background: rgba(71, 53, 38, 0.9) url(../img/bg-sp-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .link-private a:focus .hover,
+.theater-special-main .brn-link .link-private a:hover .hover {
+  background: rgba(71, 53, 38, 0.9) url(../img/bg-private-logo.png) center
+    no-repeat;
+}
+.theater-special-main .brn-link .link-puppy a:focus .hover,
+.theater-special-main .brn-link .link-puppy a:hover .hover {
+  background: rgba(63, 24, 88, 0.9) url(../img/bg-puppy-logo.png) center
+    no-repeat;
+}

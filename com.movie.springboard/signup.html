@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입 페이지</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/join1.css">
+    <link href="css/signup.css" rel="stylesheet" />
+
+    <script src="js/signup.js"></script>
+
+</head>
+<body>
+    <article>
+        <div class="middle_logo">
+            <a href="signup.html"><img src="img/logo2.png"></a>
+        </div>
+        <div action="#" id="wrapper">
+            <div class="title">정보를 입력해주세요</h1></div>
+
+            <div class="name">
+                <div class="gird_125px">이름</div>
+                <div class="gird_336px">
+                    <input id="name" type="text" placeholder="이름을 입력해 주세요.">
+                    <div id="nameError" class="error"></div>
+                </div>
+            </div>
+
+            <div class="birth">
+                <div class="gird_125px">생년월일</div>
+                <div class="grid_60">
+                    <input id="birth" type="date" max="2014-01-01">
+                    <div id="birthError" class="error"></div>
+                </div>
+            </div>
+
+            <div class="email">
+                <div class="gird_125px">이메일</div>
+                <div class="gird_336px">
+                    <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+                    <div id="emailError" class="error"></div>
+                </div>
+            </div>
+
+            <div class="password">
+                <div class="gird_125px">비밀번호</div>
+                    <div class="gird_336px">
+                    <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+                    <div id="passwordError" class="error"></div>
+                </div>
+            </div>
+
+            <div class="passwordCheck">
+                <div class="gird_125px">비밀번호 확인</div>
+                <div class="gird_336px">
+                    <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                    <div id="passwordCheckError" class="error"></div>
+                </div>
+            </div>
+            <div class="phone">
+                <div class="gird_125px">전화번호</div>
+                <div class="gird_336px">
+                    <input id="phone1" type="text" size="1" minlength="2" maxlength="3" oninput="changePhone1(), this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" > -
+                    <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2(), this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+                    <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3(), this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                </div>
+            </div>
+
+            <div class="auth">
+                <div class="grid_30">
+                    <div class="grid_c" id="certificationNumber">000000</div>
+                </div>
+                <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
+            </div>
+
+            <div class="timer">
+                <div class="grid_30">
+                    <div class="grid_c" id="timeLimit">03:00</div>
+                </div>
+                <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+            </div>
+
+            <div class="area">
+                <div class="grid_30">
+                    나만의 메가박스
+                </div>
+                    <select id="area">
+                        <option selected disabled>지역을 선택하세요.</option>
+                        <option>서울</option>
+                        <option>인천</option>
+                        <option>경기</option>
+                    </select>
+                    <div id="areaError" class="error"></div>
+            </div>
+
+            <div class="marketing_agree">
+                <table>
+                    <tr>
+                        <th>마케팅 활용을 위한 개인정보 수집 이용 안내(선택)</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <b>수집목적</b>
+                            </p>
+                            <p>
+                                고객 맞춤형 상품 및 서비스 추천, 당사 신규 상품/서비스 안내 및 권유,
+                                사은/행사 등 각종 이벤트 정보 등의 안내 및 권유
+                            </p>
+                            <p>
+                                <b>수집 항목</b><br>
+                            </p>
+                            <p>이메일, 휴대폰번호, 주소, 생년월일, 선호영화관 정보</p>
+                            <p>
+                                <b>보유기간</b>
+                            </p>
+                            <p>
+                                회원 탈퇴 시 혹은 이용 목적 달성 시 까지
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="marketing">
+                <input id="mkt_agree" type="radio" name="gender"> 동의
+                <input id="mkt_disagree" type="radio" name="gender"> 비동의
+                <div id="marketingError" class="error"></div>
+            </div>
+            <div class="line">
+            </div>
+            <div class="signUp">
+                <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+            </div>
+        </div>
+        </form>
+    </article>
+</body>
+</html>

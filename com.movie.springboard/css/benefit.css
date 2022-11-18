@@ -1,0 +1,401 @@
+.benefit_container {
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+    margin: -92px 0 -159px 0;
+    padding: 92px 0 300px 0;
+}
+.more_movie_contents {
+    width: 100%;
+    margin: 0;
+    padding: 70px 0 0 0;
+}
+.location-fixed {
+    padding-top: 70px;
+}
+.more_movie_inner_wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+h2.more_tit {
+    padding: 0 0 44px 0;
+    font-size: 1.9em;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    color: #503396;
+}
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #ebebeb;
+    border-width: 1px ;
+    border-bottom: 1px solid #503396;
+    margin-right:-4.6px
+}
+ul.tabs li.current{
+    color: #503396;
+    border: 1px solid #503396;
+    border-bottom: 0;
+    border-bottom: 1px solid #ebebeb;
+}
+/* 빗금 박스 */
+/* ------------------------------------------------------------------------------*/
+.mt70 {
+    margin-top: 70px;
+}
+.box_slash {
+    padding: 30px 0;
+    border: 1px solid #d8d9db;
+    border-radius: 10px;
+    text-align: center;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-box-slash.png);
+    margin-top: 40px;
+    overflow: hidden;
+}
+.tit-pr {
+    font-size: 2.13em;
+    text-align: center;
+    color: #503396;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.box-box_slash p {
+    padding: 0;
+    line-height: 1.1;
+    
+}
+h3.tit {
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    color: #503396;
+    line-height: 1.1;
+}
+/* 혜택 네모 박스 */
+.box {
+    float: left;
+    width: 300px;
+    height: 160px;
+    margin: 40px 0 0 0;
+    padding: 40px 0 0 190px;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+.box:nth-child(2n) {
+    float: right;
+}
+.bg-point {
+    background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-benefit-point-save.png) no-repeat 59px 42px;
+}
+/* 혜택 네모 박스 내용 */
+.benefit-membership .box .tit {
+    padding: 0 0 10px 0;
+    font-size: 1.5em;
+    color: #503396;
+    line-height: 1.1;
+}
+.benefit-membership .box .txt {
+    height: 66px;
+    line-height: 2;
+}
+/* 여백 */
+.benefit-membership::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.benefit-membership h4 {
+    font-size: 1.3em;
+    padding: 0 0 10px 0;
+}
+.benefit-membership ul li {
+    list-style-type: circle;
+}
+/* 포인트 사용 table */
+.data-table {
+    width: 100%;
+    text-align: center;
+}
+
+caption {
+    display: none;
+}
+.data-table thead th {
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #f7f8f9;
+    padding: 10px 20px;
+}
+.data-table td {
+    padding: 10px 20px;
+}
+.data-table tbody td{
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* 카드 부분*/
+.box-benefit-membership-card {
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f2f4f5;
+}
+.box-benefit-membership-card img {
+    width: 298px;
+    height: 187px;
+    border-radius: 10px;
+}
+h4.tit {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+.dot-list>li>ul {
+    padding-top: 5px;
+}
+.font-gray {
+    color: #666;
+}
+li {
+    display: list-item;
+}
+.dot-list>li{
+    position: relative;
+    padding: 0 0 0 8px;
+}
+.dot-list>li::before {
+    content: "- ";
+}
+/* ------------------------------------------------------------------------------*/
+.tab-link {
+    width: 480px;
+}
+.tab-content{
+    display: none;
+    padding: 50px 0 0 0;
+}
+.tab-content.current{
+    display: inherit;
+}
+.more_movie_info ol {
+    margin-left: -60px;
+}
+.more_movie_info ol li {
+    overflow: hidden;
+    position: relative;
+    left: 27px;
+    float: left;
+    width: 230px;
+    height: 450px;
+    margin: 0 0 50px 33px;
+    padding: 0;
+    background-color: #fff;
+}
+.more_movie_info ol li .more_list_info {
+    display: block;
+    position: relative;
+    height: 331px;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+.more_movie_info ol li .more_list_info img {
+    width: 230px;
+    height: 331px;
+}
+.more_movie_info ol li .more_list_info img.poster {
+    width: 230px;
+    height: 331px;
+}
+.ir {
+    text-indent: -9999px;
+    position: fixed;
+    top: -9999px;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.rank {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 2.3em;
+    color: #fff;
+    font-family: 'Roboto';
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+}
+.more_movie_info ol li .tit-area .movie-grade {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.more_movie_info ol li .tit-area {
+    position: relative;
+    margin: 5px 0 5px 0;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+.movie-grade {
+    overflow: hidden;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.more_movie_info ol li .tit-area .tit {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 2px 0 0 1px;
+    font-size: 1.3333em;
+    font-weight: 500;
+}
+.more_movie_info ol li:nth-child(4n)~li {
+    margin-top: 60px;
+}
+.rate-date {
+    overflow: hidden;
+}
+.rate-date span {
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.rate-date span.rate {
+    margin: 0 7px 0 0;
+    padding: 0 8px 0 0;
+}
+.rate-date span.rate:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    margin: -6px 0 0 0;
+    background-color: #d8d9db;
+}
+.movie-list ol li .btn-util {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+}
+.btn-util .btn-like {
+    float: left;
+    width: 72px;
+    margin: 0;
+    padding: 0 5px;
+    font-size: .8667em;
+    border-color: #ebebeb;
+}
+.button {
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+}
+.button>i:first-child {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.button>i {
+    margin-top: -2px;
+}
+.ico-heart-toggle-gray {
+    width: 17px;
+    height: 15px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-toggle-gray.png);
+}
+.iconset {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.btn-util {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 38px;
+}
+.button.purple {
+    color: #fff;
+    line-height: 36px;
+    border: 0;
+    background: #503396;
+}
+.btn-util .case {
+    float: left;
+    width: 151px;
+    margin-left: 5px;
+}
+.btn-util .case .button {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-more {
+    position: relative;
+    padding: 40px 0 0 0;
+}
+.btn-more.v1 .btn {
+    border: 1px solid #eaeaea;
+}
+.btn-more .btn {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    background-color: transparent;
+    color: #666;
+}
+.btn-more .btn i {
+    margin-left: 6px;
+}
+.ico-btn-more-arr {
+    width: 12px;
+    height: 7px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-btn-more-arr.png);
+}
